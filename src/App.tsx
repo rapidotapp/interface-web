@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { FunctionComponent } from 'react'
 
-const App = () => {
+const App: FunctionComponent = () => {
   return (
     <div>
       <h1>Rapid</h1>
