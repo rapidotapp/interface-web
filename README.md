@@ -6,3 +6,7 @@
 ![test](https://github.com/rapidotapp/interface-web/workflows/test/badge.svg)
 
 Web app for rapid
+
+## 👥 Contributing
+
+Before making a PR or generally contributing to this project please read the `CONTRIBUTING.md` file.
