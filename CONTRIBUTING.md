@@ -15,3 +15,7 @@
 2. Create a branch with the name being issue number.
 3. Once done adding commits to branch make a pull request.
 4. Now someone else on the team will review your PR. Congrats!
+
+## General
+
+- When you take on an issue please set yourself as the assignee.
