@@ -31,7 +31,7 @@ export const createBlog = /* GraphQL */ `
       updatedAt
     }
   }
-`
+`;
 export const updateBlog = /* GraphQL */ `
   mutation UpdateBlog(
     $input: UpdateBlogInput!
@@ -61,7 +61,7 @@ export const updateBlog = /* GraphQL */ `
       updatedAt
     }
   }
-`
+`;
 export const deleteBlog = /* GraphQL */ `
   mutation DeleteBlog(
     $input: DeleteBlogInput!
@@ -91,7 +91,7 @@ export const deleteBlog = /* GraphQL */ `
       updatedAt
     }
   }
-`
+`;
 export const createPost = /* GraphQL */ `
   mutation CreatePost(
     $input: CreatePostInput!
@@ -135,7 +135,7 @@ export const createPost = /* GraphQL */ `
       updatedAt
     }
   }
-`
+`;
 export const updatePost = /* GraphQL */ `
   mutation UpdatePost(
     $input: UpdatePostInput!
@@ -179,7 +179,7 @@ export const updatePost = /* GraphQL */ `
       updatedAt
     }
   }
-`
+`;
 export const deletePost = /* GraphQL */ `
   mutation DeletePost(
     $input: DeletePostInput!
@@ -223,7 +223,7 @@ export const deletePost = /* GraphQL */ `
       updatedAt
     }
   }
-`
+`;
 export const createComment = /* GraphQL */ `
   mutation CreateComment(
     $input: CreateCommentInput!
@@ -263,7 +263,7 @@ export const createComment = /* GraphQL */ `
       updatedAt
     }
   }
-`
+`;
 export const updateComment = /* GraphQL */ `
   mutation UpdateComment(
     $input: UpdateCommentInput!
@@ -303,7 +303,7 @@ export const updateComment = /* GraphQL */ `
       updatedAt
     }
   }
-`
+`;
 export const deleteComment = /* GraphQL */ `
   mutation DeleteComment(
     $input: DeleteCommentInput!
@@ -343,4 +343,4 @@ export const deleteComment = /* GraphQL */ `
       updatedAt
     }
   }
-`
+`;

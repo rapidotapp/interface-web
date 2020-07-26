@@ -28,7 +28,7 @@ export const onCreateBlog = /* GraphQL */ `
       updatedAt
     }
   }
-`
+`;
 export const onUpdateBlog = /* GraphQL */ `
   subscription OnUpdateBlog {
     onUpdateBlog {
@@ -55,7 +55,7 @@ export const onUpdateBlog = /* GraphQL */ `
       updatedAt
     }
   }
-`
+`;
 export const onDeleteBlog = /* GraphQL */ `
   subscription OnDeleteBlog {
     onDeleteBlog {
@@ -82,7 +82,7 @@ export const onDeleteBlog = /* GraphQL */ `
       updatedAt
     }
   }
-`
+`;
 export const onCreatePost = /* GraphQL */ `
   subscription OnCreatePost {
     onCreatePost {
@@ -123,7 +123,7 @@ export const onCreatePost = /* GraphQL */ `
       updatedAt
     }
   }
-`
+`;
 export const onUpdatePost = /* GraphQL */ `
   subscription OnUpdatePost {
     onUpdatePost {
@@ -164,7 +164,7 @@ export const onUpdatePost = /* GraphQL */ `
       updatedAt
     }
   }
-`
+`;
 export const onDeletePost = /* GraphQL */ `
   subscription OnDeletePost {
     onDeletePost {
@@ -205,7 +205,7 @@ export const onDeletePost = /* GraphQL */ `
       updatedAt
     }
   }
-`
+`;
 export const onCreateComment = /* GraphQL */ `
   subscription OnCreateComment {
     onCreateComment {
@@ -242,7 +242,7 @@ export const onCreateComment = /* GraphQL */ `
       updatedAt
     }
   }
-`
+`;
 export const onUpdateComment = /* GraphQL */ `
   subscription OnUpdateComment {
     onUpdateComment {
@@ -279,7 +279,7 @@ export const onUpdateComment = /* GraphQL */ `
       updatedAt
     }
   }
-`
+`;
 export const onDeleteComment = /* GraphQL */ `
   subscription OnDeleteComment {
     onDeleteComment {
@@ -316,4 +316,4 @@ export const onDeleteComment = /* GraphQL */ `
       updatedAt
     }
   }
-`
+`;

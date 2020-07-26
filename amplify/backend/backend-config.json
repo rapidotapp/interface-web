@@ -11,22 +11,12 @@
 			"build": true
 		}
 	},
-	"api": {
-		"rapid": {
-			"service": "AppSync",
+	"api": {},
+	"hosting": {
+		"amplifyhosting": {
+			"service": "amplifyhosting",
 			"providerPlugin": "awscloudformation",
-			"output": {
-				"authConfig": {
-					"additionalAuthenticationProviders": [],
-					"defaultAuthentication": {
-						"authenticationType": "API_KEY",
-						"apiKeyConfig": {
-							"description": "Full database access for Rapid",
-							"apiKeyExpirationDays": 7
-						}
-					}
-				}
-			}
+			"type": "manual"
 		}
 	}
 }
