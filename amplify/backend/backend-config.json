@@ -11,12 +11,35 @@
 			"build": true
 		}
 	},
-	"api": {},
+	"api": {
+		"rapid": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"authConfig": {
+					"additionalAuthenticationProviders": [],
+					"defaultAuthentication": {
+						"authenticationType": "AMAZON_COGNITO_USER_POOLS",
+						"userPoolConfig": {
+							"userPoolId": "authrapid572f5fc7"
+						}
+					}
+				}
+			}
+		}
+	},
 	"hosting": {
 		"amplifyhosting": {
 			"service": "amplifyhosting",
 			"providerPlugin": "awscloudformation",
 			"type": "manual"
+		}
+	},
+	"auth": {
+		"rapid572f5fc7": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
 		}
 	}
 }
