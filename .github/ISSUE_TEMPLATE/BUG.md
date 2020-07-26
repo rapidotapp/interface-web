@@ -1,7 +1,7 @@
 ---
 name: '🐛 Bug Report'
 about: Bug report for the rapid web interface
-title: '🐛 '
+title: ''
 labels: bug
 assignees: ''
 ---
