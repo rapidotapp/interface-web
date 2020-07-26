@@ -32,7 +32,7 @@ export const syncBlogs = /* GraphQL */ `
       startedAt
     }
   }
-`;
+`
 export const getBlog = /* GraphQL */ `
   query GetBlog($id: ID!) {
     getBlog(id: $id) {
@@ -59,7 +59,7 @@ export const getBlog = /* GraphQL */ `
       updatedAt
     }
   }
-`;
+`
 export const listBlogs = /* GraphQL */ `
   query ListBlogs(
     $filter: ModelBlogFilterInput
@@ -84,7 +84,7 @@ export const listBlogs = /* GraphQL */ `
       startedAt
     }
   }
-`;
+`
 export const syncPosts = /* GraphQL */ `
   query SyncPosts(
     $filter: ModelPostFilterInput
@@ -125,7 +125,7 @@ export const syncPosts = /* GraphQL */ `
       startedAt
     }
   }
-`;
+`
 export const getPost = /* GraphQL */ `
   query GetPost($id: ID!) {
     getPost(id: $id) {
@@ -166,7 +166,7 @@ export const getPost = /* GraphQL */ `
       updatedAt
     }
   }
-`;
+`
 export const listPosts = /* GraphQL */ `
   query ListPosts(
     $filter: ModelPostFilterInput
@@ -201,7 +201,7 @@ export const listPosts = /* GraphQL */ `
       startedAt
     }
   }
-`;
+`
 export const syncComments = /* GraphQL */ `
   query SyncComments(
     $filter: ModelCommentFilterInput
@@ -239,7 +239,7 @@ export const syncComments = /* GraphQL */ `
       startedAt
     }
   }
-`;
+`
 export const getComment = /* GraphQL */ `
   query GetComment($id: ID!) {
     getComment(id: $id) {
@@ -276,7 +276,7 @@ export const getComment = /* GraphQL */ `
       updatedAt
     }
   }
-`;
+`
 export const listComments = /* GraphQL */ `
   query ListComments(
     $filter: ModelCommentFilterInput
@@ -308,4 +308,4 @@ export const listComments = /* GraphQL */ `
       startedAt
     }
   }
-`;
+`
