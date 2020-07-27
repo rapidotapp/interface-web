@@ -2,7 +2,6 @@
 # yarn lockfile v1
 
 
-<<<<<<< HEAD
 "@aws-amplify/analytics@^3.2.4":
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/@aws-amplify/analytics/-/analytics-3.2.4.tgz#76cbed0fc6c66e601ba7671cdba5f687be60277b"
@@ -1261,9 +1260,7 @@
     tslib "^1.8.0"
 
 "@babel/code-frame@7.8.3", "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.8.3":
-=======
 "@babel/code-frame@7.8.3":
->>>>>>> master
   version "7.8.3"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.8.3.tgz#33e25903d7481181534e12ec0a25f16b6fcf419e"
   integrity sha512-a9gxpmdXtZEInkCSHUJDLHZVBgb1QS0jhss4cPP93EW7s+uC5bikET2twEF3KV+7rDblJcmNvTR7VJejqd2C2g==
