@@ -1,0 +1,15 @@
+projects:
+  rapid:
+    schemaPath: amplify/backend/api/rapid/build/schema.graphql
+    includes:
+      - src/graphql/**/*.ts
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: typescript
+        generatedFileName: src/services/core/index.ts
+        docsFilePath: src/graphql
+extensions:
+  amplify:
+    version: 3
