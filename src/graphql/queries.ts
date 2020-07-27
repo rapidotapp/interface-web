@@ -2,97 +2,14 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const syncBlogs = /* GraphQL */ `
-  query SyncBlogs(
-    $filter: ModelBlogFilterInput
+export const syncTasks = /* GraphQL */ `
+  query SyncTasks(
+    $filter: ModelTaskFilterInput
     $limit: Int
     $nextToken: String
     $lastSync: AWSTimestamp
   ) {
-    syncBlogs(
-      filter: $filter
-      limit: $limit
-      nextToken: $nextToken
-      lastSync: $lastSync
-    ) {
-      items {
-        id
-        name
-        posts {
-          nextToken
-          startedAt
-        }
-        _version
-        _deleted
-        _lastChangedAt
-        createdAt
-        updatedAt
-      }
-      nextToken
-      startedAt
-    }
-  }
-`;
-export const getBlog = /* GraphQL */ `
-  query GetBlog($id: ID!) {
-    getBlog(id: $id) {
-      id
-      name
-      posts {
-        items {
-          id
-          title
-          blogID
-          _version
-          _deleted
-          _lastChangedAt
-          createdAt
-          updatedAt
-        }
-        nextToken
-        startedAt
-      }
-      _version
-      _deleted
-      _lastChangedAt
-      createdAt
-      updatedAt
-    }
-  }
-`;
-export const listBlogs = /* GraphQL */ `
-  query ListBlogs(
-    $filter: ModelBlogFilterInput
-    $limit: Int
-    $nextToken: String
-  ) {
-    listBlogs(filter: $filter, limit: $limit, nextToken: $nextToken) {
-      items {
-        id
-        name
-        posts {
-          nextToken
-          startedAt
-        }
-        _version
-        _deleted
-        _lastChangedAt
-        createdAt
-        updatedAt
-      }
-      nextToken
-      startedAt
-    }
-  }
-`;
-export const syncPosts = /* GraphQL */ `
-  query SyncPosts(
-    $filter: ModelPostFilterInput
-    $limit: Int
-    $nextToken: String
-    $lastSync: AWSTimestamp
-  ) {
-    syncPosts(
+    syncTasks(
       filter: $filter
       limit: $limit
       nextToken: $nextToken
@@ -101,20 +18,8 @@ export const syncPosts = /* GraphQL */ `
       items {
         id
         title
-        blogID
-        blog {
-          id
-          name
-          _version
-          _deleted
-          _lastChangedAt
-          createdAt
-          updatedAt
-        }
-        comments {
-          nextToken
-          startedAt
-        }
+        description
+        status
         _version
         _deleted
         _lastChangedAt
@@ -126,39 +31,13 @@ export const syncPosts = /* GraphQL */ `
     }
   }
 `;
-export const getPost = /* GraphQL */ `
-  query GetPost($id: ID!) {
-    getPost(id: $id) {
+export const getTask = /* GraphQL */ `
+  query GetTask($id: ID!) {
+    getTask(id: $id) {
       id
       title
-      blogID
-      blog {
-        id
-        name
-        posts {
-          nextToken
-          startedAt
-        }
-        _version
-        _deleted
-        _lastChangedAt
-        createdAt
-        updatedAt
-      }
-      comments {
-        items {
-          id
-          postID
-          content
-          _version
-          _deleted
-          _lastChangedAt
-          createdAt
-          updatedAt
-        }
-        nextToken
-        startedAt
-      }
+      description
+      status
       _version
       _deleted
       _lastChangedAt
@@ -167,30 +46,18 @@ export const getPost = /* GraphQL */ `
     }
   }
 `;
-export const listPosts = /* GraphQL */ `
-  query ListPosts(
-    $filter: ModelPostFilterInput
+export const listTasks = /* GraphQL */ `
+  query ListTasks(
+    $filter: ModelTaskFilterInput
     $limit: Int
     $nextToken: String
   ) {
-    listPosts(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    listTasks(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
         title
-        blogID
-        blog {
-          id
-          name
-          _version
-          _deleted
-          _lastChangedAt
-          createdAt
-          updatedAt
-        }
-        comments {
-          nextToken
-          startedAt
-        }
+        description
+        status
         _version
         _deleted
         _lastChangedAt
@@ -202,14 +69,14 @@ export const listPosts = /* GraphQL */ `
     }
   }
 `;
-export const syncComments = /* GraphQL */ `
-  query SyncComments(
-    $filter: ModelCommentFilterInput
+export const syncPrivateNotes = /* GraphQL */ `
+  query SyncPrivateNotes(
+    $filter: ModelPrivateNoteFilterInput
     $limit: Int
     $nextToken: String
     $lastSync: AWSTimestamp
   ) {
-    syncComments(
+    syncPrivateNotes(
       filter: $filter
       limit: $limit
       nextToken: $nextToken
@@ -217,92 +84,49 @@ export const syncComments = /* GraphQL */ `
     ) {
       items {
         id
-        postID
-        post {
-          id
-          title
-          blogID
-          _version
-          _deleted
-          _lastChangedAt
-          createdAt
-          updatedAt
-        }
         content
         _version
         _deleted
         _lastChangedAt
         createdAt
         updatedAt
+        owner
       }
       nextToken
       startedAt
     }
   }
 `;
-export const getComment = /* GraphQL */ `
-  query GetComment($id: ID!) {
-    getComment(id: $id) {
+export const getPrivateNote = /* GraphQL */ `
+  query GetPrivateNote($id: ID!) {
+    getPrivateNote(id: $id) {
       id
-      postID
-      post {
-        id
-        title
-        blogID
-        blog {
-          id
-          name
-          _version
-          _deleted
-          _lastChangedAt
-          createdAt
-          updatedAt
-        }
-        comments {
-          nextToken
-          startedAt
-        }
-        _version
-        _deleted
-        _lastChangedAt
-        createdAt
-        updatedAt
-      }
       content
       _version
       _deleted
       _lastChangedAt
       createdAt
       updatedAt
+      owner
     }
   }
 `;
-export const listComments = /* GraphQL */ `
-  query ListComments(
-    $filter: ModelCommentFilterInput
+export const listPrivateNotes = /* GraphQL */ `
+  query ListPrivateNotes(
+    $filter: ModelPrivateNoteFilterInput
     $limit: Int
     $nextToken: String
   ) {
-    listComments(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    listPrivateNotes(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
-        postID
-        post {
-          id
-          title
-          blogID
-          _version
-          _deleted
-          _lastChangedAt
-          createdAt
-          updatedAt
-        }
         content
         _version
         _deleted
         _lastChangedAt
         createdAt
         updatedAt
+        owner
       }
       nextToken
       startedAt
