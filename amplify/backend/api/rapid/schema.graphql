@@ -1,19 +1,74 @@
-type Task 
-  @model 
-  @auth(rules: [
-      {allow: groups, groups: ["Managers"], queries: null, mutations: [create, update, delete]},
-      {allow: groups, groups: ["Employees"], queries: [get, list], mutations: null}
-    ])
-{
+# Communities can have multiple admin users. Admin users can be admins of multiple communities.
+# 
+
+type Community @model {
   id: ID!
-  title: String!
-  description: String
-  status: String
+  name: String! # Admin users
+  image: S3Bucket # Admin users
+  workspaceAdmins: [CommunityAdministration!]! @connection(name: "adminChannel") # God user
+  channels: [Channel]
 }
-type PrivateNote
-  @model
-  @auth(rules: [{allow: owner}])
-{
+
+type CommunityAdministration @model {
   id: ID!
+  community: Community! @connection(name: "adminChannel")
+  user: User! @connection(name: "adminUser")
+}
+
+type User @model {
+  id: ID!
+  communities: [Community!]!
+  pfp: S3Bucket!
+  adminOf: [CommunityAdministration] @connection(name: "adminUser")
+  friends: [User]
+  conversations: []
+}
+
+type Conversation @model {
+  
+}
+
+type UserChannelTable {
+  id: ID!
+}
+
+type Channel @model {
+  id: ID!
+  users: [User!]!
+  readOnly: Boolean!
+  messages: [Message!]! @connection(name: "")
+  timeCreated: String!
+  description: String!
+  topic: String
+  name: String!
+  icon: S3Bucket!
+}
+
+enum ChannelSecurity {
+  Public,
+  Private
+}
+
+type Message @model {
+  id: ID!
+  author: User! @connection(name: "") #store user id
+  timeCreated: String! 
+  timeEdited: String!
   content: String!
+  reactions: [String!]! # reaction needs reaction + user
+  #attachments stored as uri? are we hosting their uploads? yep on AWS S3
+  attachments: [S3Bucket!]! #attachment object?
+  mentions: [User!]!
+  flags: Integer
+
+}
+
+type Reaction @model {
+  name: String!
+  image: S3Bucket!
+}
+
+type S3Bucket @model {
+  key: String!
+  # TODO
 }
