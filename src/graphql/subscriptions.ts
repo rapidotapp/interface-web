@@ -16,7 +16,7 @@ export const onCreateTask = /* GraphQL */ `
       updatedAt
     }
   }
-`;
+`
 export const onUpdateTask = /* GraphQL */ `
   subscription OnUpdateTask {
     onUpdateTask {
@@ -31,7 +31,7 @@ export const onUpdateTask = /* GraphQL */ `
       updatedAt
     }
   }
-`;
+`
 export const onDeleteTask = /* GraphQL */ `
   subscription OnDeleteTask {
     onDeleteTask {
@@ -46,7 +46,7 @@ export const onDeleteTask = /* GraphQL */ `
       updatedAt
     }
   }
-`;
+`
 export const onCreatePrivateNote = /* GraphQL */ `
   subscription OnCreatePrivateNote($owner: String!) {
     onCreatePrivateNote(owner: $owner) {
@@ -60,7 +60,7 @@ export const onCreatePrivateNote = /* GraphQL */ `
       owner
     }
   }
-`;
+`
 export const onUpdatePrivateNote = /* GraphQL */ `
   subscription OnUpdatePrivateNote($owner: String!) {
     onUpdatePrivateNote(owner: $owner) {
@@ -74,7 +74,7 @@ export const onUpdatePrivateNote = /* GraphQL */ `
       owner
     }
   }
-`;
+`
 export const onDeletePrivateNote = /* GraphQL */ `
   subscription OnDeletePrivateNote($owner: String!) {
     onDeletePrivateNote(owner: $owner) {
@@ -88,4 +88,4 @@ export const onDeletePrivateNote = /* GraphQL */ `
       owner
     }
   }
-`;
+`

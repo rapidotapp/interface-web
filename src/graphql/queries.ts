@@ -30,7 +30,7 @@ export const syncTasks = /* GraphQL */ `
       startedAt
     }
   }
-`;
+`
 export const getTask = /* GraphQL */ `
   query GetTask($id: ID!) {
     getTask(id: $id) {
@@ -45,7 +45,7 @@ export const getTask = /* GraphQL */ `
       updatedAt
     }
   }
-`;
+`
 export const listTasks = /* GraphQL */ `
   query ListTasks(
     $filter: ModelTaskFilterInput
@@ -68,7 +68,7 @@ export const listTasks = /* GraphQL */ `
       startedAt
     }
   }
-`;
+`
 export const syncPrivateNotes = /* GraphQL */ `
   query SyncPrivateNotes(
     $filter: ModelPrivateNoteFilterInput
@@ -96,7 +96,7 @@ export const syncPrivateNotes = /* GraphQL */ `
       startedAt
     }
   }
-`;
+`
 export const getPrivateNote = /* GraphQL */ `
   query GetPrivateNote($id: ID!) {
     getPrivateNote(id: $id) {
@@ -110,7 +110,7 @@ export const getPrivateNote = /* GraphQL */ `
       owner
     }
   }
-`;
+`
 export const listPrivateNotes = /* GraphQL */ `
   query ListPrivateNotes(
     $filter: ModelPrivateNoteFilterInput
@@ -132,4 +132,4 @@ export const listPrivateNotes = /* GraphQL */ `
       startedAt
     }
   }
-`;
+`
