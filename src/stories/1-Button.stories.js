@@ -1,11 +1,5 @@
 import React from 'react'
-import {
-  Button,
-  ThemeProvider,
-  theme,
-  CSSReset,
-  ColorModeProvider,
-} from '@chakra-ui/core'
+import { Button } from '@chakra-ui/core'
 import ThemeX from '../components/theme'
 
 export default { title: 'Button' }
