@@ -12,11 +12,8 @@ const commonShadow = `
 0 8px 8px rgba(0,0,0,0.12),
 0 16px 16px rgba(0,0,0,0.12)`
 
-const bigBorderRadiusTop = '50px'
 const mediumBorderRadiusBottom = '25px'
 const smallBorderRadius = '15px'
-const width = '300px'
-const height = '300px'
 
 export const withText = () => {
   return (
