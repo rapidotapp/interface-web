@@ -15,6 +15,7 @@
 2. Create a branch with the name being issue number.
 3. Once done adding commits to branch make a pull request.
 4. Now someone else on the team will review your PR. Congrats!
+5. **Warning** once your PR gets merged the branch for it will automatically get deleted
 
 ## General
 
