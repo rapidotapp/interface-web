@@ -1,18 +1,14 @@
 import React from 'react'
 import ThemedComponent from '../components/theme'
 import {
-  Box,
   Stack,
-  Flex,
   Text,
   theme,
   Button,
   Heading,
   InputGroup,
-  InputLeftAddon,
   Input,
 } from '@chakra-ui/core'
-import { Mail } from 'react-feather'
 import Wave from 'react-wavify'
 
 export default { title: 'LoginCard' }
