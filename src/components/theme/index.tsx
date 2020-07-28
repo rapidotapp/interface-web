@@ -3,12 +3,13 @@ import {
   theme,
   ColorModeProvider,
   CSSReset,
+  DarkMode,
 } from '@chakra-ui/core'
 import React from 'react'
 
-const ThemedComponent: React.FunctionComponent = ({ children }) => (
+const ThemedComponent: React.FC = ({ children }: any) => (
   <ThemeProvider theme={theme}>
-    <ColorModeProvider>
+    <ColorModeProvider value="dark">
       <CSSReset />
       {children}
     </ColorModeProvider>
