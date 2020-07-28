@@ -28,5 +28,6 @@ module.exports = {
         argsIgnorePattern: 'children',
       },
     ],
+    '@typescript-eslint/no-empty-interface': 'off',
   },
 }

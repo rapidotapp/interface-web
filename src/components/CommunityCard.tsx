@@ -10,8 +10,16 @@ const mediumBorderRadiusBottom = '25px'
 const width = '300px'
 const height = '300px'
 
-// TODO: fix gradient
-export default function CommunityCard() {
+interface ICommunityCard {
+  children?: React.ReactNode
+  title: string
+  description: string
+  totalMembers: number
+}
+export default function CommunityCard({
+  title,
+  totalMembers,
+}: ICommunityCard): React.ReactNode {
   return (
     <Flex
       height={height}
@@ -47,12 +55,12 @@ export default function CommunityCard() {
             transform="translateX(92px) translateY(-2px)"
             fontWeight="semibold"
           >
-            Rapid
+            {title}
           </Text>
           <Text color="gray.400" fontSize="sm" marginTop="10px">
             An amazing super coolio awesome app that auto manual repeat grid
           </Text>
-          <MemberCount />
+          <MemberCount totalMembers={totalMembers} />
         </Box>
       </Flex>
     </Flex>
