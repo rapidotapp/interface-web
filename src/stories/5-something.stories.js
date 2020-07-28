@@ -12,7 +12,8 @@ const commonShadow = `
 0 8px 8px rgba(0,0,0,0.12),
 0 16px 16px rgba(0,0,0,0.12)`
 
-const borderRadius = '20px'
+const bigBorderRadiusTop = '50px'
+const mediumBorderRadiusBottom = '25px'
 const smallBorderRadius = '15px'
 const width = '300px'
 const height = '300px'
@@ -24,18 +25,22 @@ export const withText = () => {
         height={height}
         width={width}
         flexDirection="column"
-        borderRadius={borderRadius}
+        borderTopLeftRadius={bigBorderRadiusTop}
+        borderTopRightRadius={bigBorderRadiusTop}
+        borderBottomLeftRadius={mediumBorderRadiusBottom}
+        borderBottomRightRadius={mediumBorderRadiusBottom}
         boxShadow={commonShadow}
         position="relative"
       >
         <Box
-          borderRadius={borderRadius}
+          borderTopLeftRadius={bigBorderRadiusTop}
+          borderTopRightRadius={bigBorderRadiusTop}
           height="60%"
           background="linear-gradient(-180deg, rgba(94,153,202,1) 0%, rgba(196,149,178,1) 100%)"
         ></Box>
         <Flex
           backgroundColor="#292A2F"
-          borderRadius={borderRadius}
+          borderRadius={mediumBorderRadiusBottom}
           flexDirection="column"
           position="absolute"
           bottom="0"
