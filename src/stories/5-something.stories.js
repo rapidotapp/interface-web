@@ -1,6 +1,6 @@
 import React from 'react'
 import rapidLogo from '../assets/img/logo.png'
-import { Button, Flex, Text, Image, Box } from '@chakra-ui/core'
+import { Flex, Text, Image, Box } from '@chakra-ui/core'
 import ThemeX from '../components/theme'
 
 export default { title: 'Card' }
