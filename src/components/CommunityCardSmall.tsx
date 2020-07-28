@@ -22,7 +22,7 @@ export default function CommunityCardSmall({
     >
       <LogoBackdrop />
       <Flex flexDirection="column" alignItems="flex-start" marginLeft="20px">
-        <Text>{title}</Text>
+        <Text fontWeight="semibold">{title}</Text>
         <MemberCount totalMembers={totalMembers} />
       </Flex>
     </Flex>
