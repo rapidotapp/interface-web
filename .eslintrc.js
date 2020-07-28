@@ -21,5 +21,12 @@ module.exports = {
   rules: {
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     'react/prop-types': [2, { ignore: ['children'] }],
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-unused-vars': [
+      'error',
+      {
+        argsIgnorePattern: 'children',
+      },
+    ],
   },
 }
