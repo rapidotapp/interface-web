@@ -1,5 +1,5 @@
 import React from 'react'
-import ThemedComponent from '../components/theme'
+import ThemeX from '../components/theme'
 import {
   Stack,
   Text,
@@ -15,7 +15,7 @@ export default { title: 'LoginCard' }
 
 export const withText = () => {
   return (
-    <ThemedComponent>
+    <ThemeX>
       <Stack shadow="lg" width="50rem" borderColor="white">
         <Stack>
           <Heading>Welcome!</Heading>
@@ -46,6 +46,6 @@ export const withText = () => {
           }}
         />
       </Stack>
-    </ThemedComponent>
+    </ThemeX>
   )
 }

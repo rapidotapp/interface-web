@@ -1,5 +1,5 @@
 import React from 'react'
-import ThemedComponent from '../components/theme'
+import ThemeX from '../components/theme'
 import { Box, Flex, Image } from '@chakra-ui/core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -17,7 +17,7 @@ export default { title: 'NavSidebar' }
 
 export const withText = () => {
   return (
-    <ThemedComponent>
+    <ThemeX>
       <Flex
         direction="column"
         bg="#212226"
@@ -135,6 +135,6 @@ export const withText = () => {
           />
         </Flex>
       </Flex>
-    </ThemedComponent>
+    </ThemeX>
   )
 }
