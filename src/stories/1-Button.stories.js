@@ -1,18 +1,33 @@
 import React from 'react'
-import { action } from '@storybook/addon-actions'
-import { Button } from '@storybook/react/demo'
+import {
+  Button,
+  ThemeProvider,
+  theme,
+  CSSReset,
+  ColorModeProvider,
+} from '@chakra-ui/core'
+import ThemeX from '../components/theme'
 
-export default {
-  title: 'Button',
-  component: Button,
+export default { title: 'Button' }
+
+// const ThemeX = ({ children }) => (
+//   <ThemeProvider theme={theme} dark>
+//       <ColorModeProvider>
+//       <CSSReset/>
+//       {children}
+//       </ColorModeProvider>
+//     </ThemeProvider>
+// )
+
+export const withText = () => {
+  return (
+    <ThemeX>
+      <Button>Hello</Button>
+    </ThemeX>
+  )
 }
-
-export const Text = () => (
-  <Button onClick={action('clicked')}>Hello Button</Button>
-)
-
-export const Emoji = () => (
-  <Button onClick={action('clicked')}>
+export const withEmoji = () => (
+  <Button>
     <span role="img" aria-label="so cool">
       😀 😎 👍 💯
     </span>
