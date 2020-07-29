@@ -14,7 +14,7 @@ export default function Home(): JSX.Element {
       <Box marginRight="25px">
         <NavSidebar />
       </Box>
-      <Stack spacing={8} marginTop="15px" width="100%">
+      <Stack spacing={8} marginTop="15px" marginRight="15px" width="100%">
         <FindInterface />
         <GroupHeading>
           <Text>Drops</Text>
