@@ -47,6 +47,7 @@ export default function Sidebar() {
             src="https://www.yourdictionary.com/images/definitions/lg/10750.person.jpg"
             borderRadius="50%"
             cursor="pointer"
+            objectFit="cover"
           />
           <Box
             bg="#67e5ae"
