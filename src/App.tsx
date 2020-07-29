@@ -1,9 +1,13 @@
 import React, { FunctionComponent } from 'react'
+import ThemeX from './components/theme'
+import Home from './pages/Home'
 
 const App: FunctionComponent = () => {
   return (
     <div>
-      <h1>Rapid</h1>
+      <ThemeX>
+        <Home />
+      </ThemeX>
     </div>
   )
 }

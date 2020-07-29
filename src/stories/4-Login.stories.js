@@ -1,51 +1,12 @@
 import React from 'react'
 import ThemeX from '../components/theme'
-import {
-  Stack,
-  Text,
-  theme,
-  Button,
-  Heading,
-  InputGroup,
-  Input,
-} from '@chakra-ui/core'
-import Wave from 'react-wavify'
-
+import Login from '../components/Login'
 export default { title: 'LoginCard' }
 
-export const withText = () => {
+export const Main = () => {
   return (
     <ThemeX>
-      <Stack shadow="lg" width="50rem" borderColor="white">
-        <Stack>
-          <Heading>Welcome!</Heading>
-          <Text>
-            We&apos;re super happy to have you here. Let&apos;s get started!
-          </Text>
-          <InputGroup>
-            <Input placeholder="Email" />
-          </InputGroup>
-
-          <Button
-            style={{
-              background:
-                'linear-gradient(90deg, #4FE0B5 -46.9%, #3F54D1 100%)',
-            }}
-          >
-            Sign in using Magic Link
-          </Button>
-        </Stack>
-        <Wave
-          fill={theme.colors.gray[700]}
-          paused={false}
-          options={{
-            height: 20,
-            amplitude: 20,
-            speed: 0.25,
-            points: 15,
-          }}
-        />
-      </Stack>
+      <Login />
     </ThemeX>
   )
 }

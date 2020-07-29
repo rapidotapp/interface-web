@@ -21,15 +21,18 @@ import {
 
 export default { title: 'FriendList' }
 
-// FOR TypeScript
-// interface userSchema {
-//   Name: string;
-//   Username: string;
-//   ImageURL: string;
-//   Drops: Array<string>;
-// }
+/**
+ * @typedef userSchema
+ * @property {string} Name
+ * @property {string} Username
+ * @property {string} ImageURL
+ * @property {Array<string>} Drops
+ */
 
-export const friendItem = (userSchema, isOnline) => {
+export const friendItem = (
+  /** @type userSchema */ userSchema,
+  /** @type boolean */ isOnline
+) => {
   return (
     <Flex direction="column">
       <Flex direction="row" align="center" marginBottom="17px">
