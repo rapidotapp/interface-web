@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, Text, Stack } from '@chakra-ui/core'
+import { Text, Stack } from '@chakra-ui/core'
 import NavSidebar from '../components/organisms/NavSidebar'
 import FindInterface from '../components/organisms/FindInterface'
 import DropsList from '../components/molecules/DropsList'
@@ -9,29 +9,29 @@ import GroupHeading from '../components/atoms/GroupHeading'
 
 export default function Home(): JSX.Element {
   return (
-    <Flex>
+    <Stack spacing={4} direction="row">
       <NavSidebar />
-      <Flex flexDirection="column" margin="20px">
+      <Stack spacing={4} margin="20px">
         <FindInterface />
         <GroupHeading>
           <Text>Drops</Text>
         </GroupHeading>
         <DropsList />
         <Stack spacing={4} direction="row">
-          <Flex flexDirection="column">
+          <Stack spacing={4}>
             <GroupHeading>
               <Text>Trending</Text>
             </GroupHeading>
             <Trending />
-          </Flex>
-          <Flex flexDirection="column">
+          </Stack>
+          <Stack spacing={4}>
             <GroupHeading>
               <Text>Recommended For You</Text>
             </GroupHeading>
             <Recommended />
-          </Flex>
+          </Stack>
         </Stack>
-      </Flex>
-    </Flex>
+      </Stack>
+    </Stack>
   )
 }
