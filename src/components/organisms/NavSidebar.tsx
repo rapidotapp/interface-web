@@ -11,6 +11,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import { commonShadow } from '../common'
 
@@ -83,30 +84,41 @@ export default function Sidebar() {
         justify="space-between"
         paddingY="75px"
       >
-        <FontAwesomeIcon
-          color="#979797"
-          size="lg"
-          cursor="pointer"
-          icon={faComment}
-        />
-        <FontAwesomeIcon
-          color="#979797"
-          size="lg"
-          cursor="pointer"
-          icon={faCompass}
-        />
-        <FontAwesomeIcon
-          color="#979797"
-          size="lg"
-          cursor="pointer"
-          icon={faUsers}
-        />
-        <FontAwesomeIcon
-          color="#979797"
-          size="lg"
-          cursor="pointer"
-          icon={faGlobeAmericas}
-        />
+        <Link to="/">
+          <FontAwesomeIcon
+            color="#979797"
+            size="lg"
+            cursor="pointer"
+            icon={faComment}
+          />
+        </Link>
+
+        <Link to="/explore">
+          <FontAwesomeIcon
+            color="#979797"
+            size="lg"
+            cursor="pointer"
+            icon={faCompass}
+          />
+        </Link>
+
+        <Link to="/users">
+          <FontAwesomeIcon
+            color="#979797"
+            size="lg"
+            cursor="pointer"
+            icon={faUsers}
+          />
+        </Link>
+
+        <Link to="/globe">
+          <FontAwesomeIcon
+            color="#979797"
+            size="lg"
+            cursor="pointer"
+            icon={faGlobeAmericas}
+          />
+        </Link>
       </Flex>
 
       <Flex
