@@ -17,78 +17,84 @@ const maxBorder = '50px'
 
 export default function FindInterface() {
   return (
-    <Flex width="100%" backgroundColor="#292A2F" borderRadius={bigBorder}>
-      <Flex
+    <Flex
+      width="100%"
+      backgroundColor="#292A2F"
+      borderRadius={bigBorder}
+      boxShadow={commonShadow}
+    >
+      <Stack
         flexDirection="column"
         backgroundColor="#292A2F"
         boxShadow={commonShadow}
-        padding="15px"
+        padding="15px 25px"
         borderRadius={bigBorder}
+        minWidth="200px"
       >
-        <Stack>
+        <Stack direction="row" justifyContent="start" alignItems="center">
           <FontAwesomeIcon
             color="#979797"
             size="lg"
             cursor="pointer"
             icon={faGraduationCap}
           />
-          <Text>Education</Text>
+          <Text margin="5px 10px">Education</Text>
         </Stack>
-        <Stack>
+        <Stack direction="row" justifyContent="start" alignItems="center">
           <FontAwesomeIcon
             color="#979797"
             size="lg"
             cursor="pointer"
             icon={faHeadphones}
           />
-          <Text>Gaming</Text>
+          <Text margin="5px 10px">Gaming</Text>
         </Stack>
-        <Stack>
+        <Stack direction="row" justifyContent="start" alignItems="center">
           <FontAwesomeIcon
             color="#979797"
             size="lg"
             cursor="pointer"
             icon={faCamera}
           />
-          <Text>Movies & TV</Text>
+          <Text margin="5px 10px">Movies & TV</Text>
         </Stack>
-        <Stack>
+        <Stack direction="row" justifyContent="start" alignItems="center">
           <FontAwesomeIcon
             color="#979797"
             size="lg"
             cursor="pointer"
             icon={faMusic}
           />
-          <Text>Music</Text>
+          <Text margin="5px 10px">Music</Text>
         </Stack>
-        <Stack>
+        <Stack direction="row" justifyContent="start" alignItems="center">
           <FontAwesomeIcon
             color="#979797"
             size="lg"
             cursor="pointer"
             icon={faHammer}
           />
-          <Text>Politics</Text>
+          <Text margin="5px 10px">Politics</Text>
         </Stack>
-        <Stack>
+        <Stack direction="row" justifyContent="start" alignItems="center">
           <FontAwesomeIcon
             color="#979797"
             size="lg"
             cursor="pointer"
             icon={faBasketballBall}
           />
-          <Text>Sports</Text>
+          <Text margin="5px 10px">Sports</Text>
         </Stack>
-        <Stack>
+        <Stack direction="row" justifyContent="start" alignItems="center">
           <FontAwesomeIcon
             color="#979797"
             size="lg"
             cursor="pointer"
             icon={faLaptopCode}
           />
-          <Text>Technology</Text>
+          <Text margin="5px 10px">Technology</Text>
         </Stack>
-      </Flex>
+      </Stack>
       <Flex
         flexDirection="column"
         alignItems="center"

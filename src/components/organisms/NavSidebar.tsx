@@ -11,6 +11,7 @@ import {
   faAt,
   faCog,
 } from '@fortawesome/free-solid-svg-icons'
+import { commonShadow } from '../common'
 
 export default function Sidebar() {
   return (
@@ -25,6 +26,7 @@ export default function Sidebar() {
       align="center"
       justify="space-between"
       paddingY="12px"
+      boxShadow={commonShadow}
     >
       <Flex
         w="70px"
