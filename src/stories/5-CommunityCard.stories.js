@@ -3,7 +3,7 @@ import ThemeX from '../components/theme'
 import CommunityCard from '../components/CommunityCard'
 import CommunityCardSmall from '../components/CommunityCardSmall'
 
-export default { title: 'Cards' }
+export default { title: 'Community Cards' }
 
 export const communityCard = () => {
   return (
