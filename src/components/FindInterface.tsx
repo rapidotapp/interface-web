@@ -11,7 +11,6 @@ const maxBorder = '50px'
 // }
 
 function Item({ children, ...props }: any) {
-  console.log(props.icon)
   return (
     <Flex alignItems="center" margin="7px 25px 7px 20px">
       <Icon color="gray.400" name={props.icon} marginRight="30px"></Icon>

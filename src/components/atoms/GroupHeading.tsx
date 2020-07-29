@@ -8,7 +8,6 @@ interface IGroupHeading {
 }
 
 export default function GroupHeading({ children }: IGroupHeading) {
-  console.log(children)
   return (
     <Flex alignItems="center" padding="10px">
       <Text fontWeight="semibold">{children}</Text>
