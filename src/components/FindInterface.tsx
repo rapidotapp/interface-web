@@ -1,6 +1,7 @@
 import React from 'react'
-import { Input, Flex } from '@chakra-ui/core'
 // import PropTypes from 'prop-types'
+import { Input, Flex, Heading, Icon, Text } from '@chakra-ui/core'
+import { commonShadow } from './atoms/common'
 
 const bigBorder = '35px'
 const maxBorder = '50px'
@@ -9,22 +10,22 @@ const maxBorder = '50px'
 //   icon: PropTypes.string.isRequired,
 // }
 
-// function Item({ children, ...props }: any) {
-//   console.log(props.icon)
-//   return (
-//     <Flex alignItems="center" margin="7px 25px 7px 20px">
-//       <Icon color="gray.400" name={props.icon} marginRight="30px"></Icon>
-//       <Text color="gray.400" fontSize="sm">
-//         {children}
-//       </Text>
-//     </Flex>
-//   )
-// }
+function Item({ children, ...props }: any) {
+  console.log(props.icon)
+  return (
+    <Flex alignItems="center" margin="7px 25px 7px 20px">
+      <Icon color="gray.400" name={props.icon} marginRight="30px"></Icon>
+      <Text color="gray.400" fontSize="sm">
+        {children}
+      </Text>
+    </Flex>
+  )
+}
 
 export default function FindInterface() {
   return (
     <Flex width="100%" backgroundColor="#292A2F" borderRadius={bigBorder}>
-      {/* <Flex
+      <Flex
         flexDirection="column"
         backgroundColor="#292A2F"
         boxShadow={commonShadow}
@@ -38,7 +39,7 @@ export default function FindInterface() {
         <Item icon="check">Politics</Item>
         <Item icon="check">Sports</Item>
         <Item icon="check">Technology</Item>
-      </Flex> */}
+      </Flex>
       <Flex
         flexDirection="column"
         alignItems="center"
@@ -46,7 +47,7 @@ export default function FindInterface() {
         width="100%"
         margin="30px"
       >
-        {/* <Flex margin="25px" alignItems="center">
+        <Flex margin="25px" alignItems="center">
           <Heading as="h3" size="lg" fontWeight="semibold">
             Find new
           </Heading>
@@ -61,7 +62,7 @@ export default function FindInterface() {
               padding="5px 15px"
               borderRadius={maxBorder}
             >
-              <Icon color="gray.100" name="check" paddingRight="8px"></Icon>
+              <Icon color="gray.100" name="phone" paddingRight="8px"></Icon>
               <Text fontSize="xl" fontWeight="semibold">
                 Drops
               </Text>
@@ -75,7 +76,7 @@ export default function FindInterface() {
               Communities
             </Text>
           </Flex>
-        </Flex> */}
+        </Flex>
         <Input
           backgroundColor="white"
           borderRadius={maxBorder}
