@@ -1,5 +1,5 @@
+import { Box, Flex, Text } from '@chakra-ui/core'
 import React from 'react'
-import { Flex, Text, Box } from '@chakra-ui/core'
 import { IoIosArrowForward } from 'react-icons/io'
 
 interface IGroupHeading {

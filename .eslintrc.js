@@ -12,6 +12,7 @@ module.exports = {
       version: 'detect',
     },
   },
+  plugins: ['simple-import-sort'],
   extends: [
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
@@ -30,5 +31,9 @@ module.exports = {
     ],
     '@typescript-eslint/no-empty-interface': 'off',
     'prefer-const': 'off',
+    // simple-import-sort
+    'sort-imports': 'off',
+    'import/order': 'off',
+    'simple-import-sort/sort': 'error',
   },
 }
