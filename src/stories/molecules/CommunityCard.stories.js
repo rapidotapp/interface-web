@@ -1,7 +1,8 @@
 import React from 'react'
-import ThemeX from '../../components/theme'
+
 import CommunityCard from '../../components/molecules/CommunityCard'
 import CommunityCardSmall from '../../components/molecules/CommunityCardSmall'
+import ThemeX from '../../components/theme'
 
 export default { title: 'CommunityCard' }
 

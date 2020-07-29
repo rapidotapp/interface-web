@@ -1,5 +1,6 @@
-import React from 'react'
 import { Box, Image } from '@chakra-ui/core'
+import React from 'react'
+
 import rapidLogo from '../../assets/img/logo.png'
 import { commonShadow, smallBorderRadius } from '../common'
 

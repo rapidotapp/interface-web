@@ -1,16 +1,16 @@
-import React from 'react'
 import { Box, Flex, Image } from '@chakra-ui/core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-  faMicrophone,
-  faVideoSlash,
-  faComment,
-  faCompass,
-  faUsers,
-  faGlobeAmericas,
   faAt,
   faCog,
+  faComment,
+  faCompass,
+  faGlobeAmericas,
+  faMicrophone,
+  faUsers,
+  faVideoSlash,
 } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React from 'react'
 
 export default function Sidebar() {
   return (

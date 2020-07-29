@@ -1,23 +1,24 @@
-import React from 'react'
-import ThemedComponent from '../components/theme'
 import {
   Box,
-  Flex,
   Button,
-  Text,
+  Flex,
+  Icon,
+  Image,
   Input,
   InputGroup,
   InputLeftElement,
-  Icon,
-  Image,
+  Text,
 } from '@chakra-ui/core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faComment,
-  faPhone,
   faEllipsisV,
+  faPhone,
   faTint,
 } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React from 'react'
+
+import ThemedComponent from '../components/theme'
 
 export default { title: 'FriendList' }
 

@@ -1,6 +1,7 @@
-import React from 'react'
 // import PropTypes from 'prop-types'
-import { Input, Flex, Heading, Icon, Text } from '@chakra-ui/core'
+import { Flex, Heading, Icon, Input, Text } from '@chakra-ui/core'
+import React from 'react'
+
 import { commonShadow } from '../common'
 
 const bigBorder = '35px'

@@ -1,4 +1,5 @@
 import React from 'react'
+
 import CommunityCard from '../molecules/CommunityCard'
 
 export default function Trending() {

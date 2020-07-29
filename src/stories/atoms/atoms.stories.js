@@ -1,8 +1,9 @@
 import React from 'react'
-import ThemeX from '../../components/theme'
+
+import GroupHeading from '../../components/atoms/GroupHeading'
 import LogoBackdrop from '../../components/atoms/LogoBackdrop'
 import MemberCount from '../../components/atoms/MemberCount'
-import GroupHeading from '../../components/atoms/GroupHeading'
+import ThemeX from '../../components/theme'
 
 export default { title: 'Atoms' }
 

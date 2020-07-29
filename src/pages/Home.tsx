@@ -1,11 +1,12 @@
+import { Flex, Stack, Text } from '@chakra-ui/core'
 import React from 'react'
-import { Flex, Text, Stack } from '@chakra-ui/core'
-import NavSidebar from '../components/organisms/NavSidebar'
-import FindInterface from '../components/organisms/FindInterface'
-import DropsList from '../components/molecules/DropsList'
-import Trending from '../components/organisms/Trending'
-import Recommended from '../components/organisms/Recommended'
+
 import GroupHeading from '../components/atoms/GroupHeading'
+import DropsList from '../components/molecules/DropsList'
+import FindInterface from '../components/organisms/FindInterface'
+import NavSidebar from '../components/organisms/NavSidebar'
+import Recommended from '../components/organisms/Recommended'
+import Trending from '../components/organisms/Trending'
 
 export default function Home(): JSX.Element {
   return (
