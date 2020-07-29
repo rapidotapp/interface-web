@@ -25,6 +25,7 @@ export default function Sidebar() {
       align="center"
       justify="space-between"
       paddingY="12px"
+      boxShadow="0px 0px 25px #151618"
     >
       <Flex
         w="70px"
