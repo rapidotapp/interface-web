@@ -12,6 +12,8 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 
+import { commonShadow } from '../common'
+
 export default function Sidebar() {
   return (
     <Flex
@@ -25,7 +27,7 @@ export default function Sidebar() {
       align="center"
       justify="space-between"
       paddingY="12px"
-      boxShadow="0px 0px 25px #151618"
+      boxShadow={commonShadow}
     >
       <Flex
         w="70px"

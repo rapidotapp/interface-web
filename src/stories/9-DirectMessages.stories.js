@@ -11,7 +11,7 @@ import {
 } from '@chakra-ui/core'
 import React from 'react'
 
-import Sidebar from '../components/NavSidebar'
+import Sidebar from '../components/organisms/NavSidebar'
 import ThemedComponent from '../components/theme'
 
 export default { title: 'DirectMessages' }

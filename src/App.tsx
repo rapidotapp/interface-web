@@ -1,3 +1,4 @@
+import { Box } from '@chakra-ui/core'
 import React, { FunctionComponent } from 'react'
 
 import ThemeX from './components/theme'
@@ -7,7 +8,9 @@ const App: FunctionComponent = () => {
   return (
     <div>
       <ThemeX>
-        <Home />
+        <Box backgroundColor="#212226">
+          <Home />
+        </Box>
       </ThemeX>
     </div>
   )

@@ -30,6 +30,7 @@ module.exports = {
       },
     ],
     '@typescript-eslint/no-empty-interface': 'off',
+    'prefer-const': 'off',
     // simple-import-sort
     'sort-imports': 'off',
     'import/order': 'off',
