@@ -1,5 +1,6 @@
-import React from 'react'
 import { Flex, Text } from '@chakra-ui/core'
+import React from 'react'
+
 import LogoBackdrop from '../atoms/LogoBackdrop'
 import MemberCount from '../atoms/MemberCount'
 import { mediumBorderRadius } from '../common'

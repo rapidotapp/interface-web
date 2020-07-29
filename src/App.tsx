@@ -1,7 +1,8 @@
+import { Box } from '@chakra-ui/core'
 import React, { FunctionComponent } from 'react'
+
 import ThemeX from './components/theme'
 import Home from './pages/Home'
-import { Box } from '@chakra-ui/core'
 
 const App: FunctionComponent = () => {
   return (

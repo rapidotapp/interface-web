@@ -1,7 +1,8 @@
+import { Box, Stack } from '@chakra-ui/core'
 import React from 'react'
-import DropCardSmall from './DropCardSmall'
-import { Stack, Box } from '@chakra-ui/core'
+
 import { commonShadow } from '../common'
+import DropCardSmall from './DropCardSmall'
 
 export default function DropList() {
   return (

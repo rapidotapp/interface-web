@@ -1,6 +1,7 @@
+import { Box, Stack } from '@chakra-ui/core'
 import React from 'react'
+
 import CommunityCard from '../molecules/CommunityCard'
-import { Stack, Box } from '@chakra-ui/core'
 
 export default function Recommended() {
   return (

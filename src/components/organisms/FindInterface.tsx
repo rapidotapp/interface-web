@@ -1,16 +1,17 @@
-import React from 'react'
-import { Input, Flex, Heading, Stack, Icon, Text } from '@chakra-ui/core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { commonShadow } from '../common'
+import { Flex, Heading, Icon, Input, Stack, Text } from '@chakra-ui/core'
 import {
-  faHeadphones,
-  faCamera,
-  faHammer,
   faBasketballBall,
-  faLaptopCode,
+  faCamera,
   faGraduationCap,
+  faHammer,
+  faHeadphones,
+  faLaptopCode,
   faMusic,
 } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React from 'react'
+
+import { commonShadow } from '../common'
 
 const bigBorder = '35px'
 const maxBorder = '50px'

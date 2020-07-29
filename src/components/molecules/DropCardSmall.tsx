@@ -1,5 +1,6 @@
+import { Box, Flex, Image, Text } from '@chakra-ui/core'
 import React from 'react'
-import { Flex, Image, Box, Text } from '@chakra-ui/core'
+
 import { commonShadow } from '../common'
 
 export default function DropCardSmall() {
