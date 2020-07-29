@@ -1,8 +1,8 @@
 import {
-  ThemeProvider,
-  theme,
   ColorModeProvider,
   CSSReset,
+  theme,
+  ThemeProvider,
 } from '@chakra-ui/core'
 import React from 'react'
 
