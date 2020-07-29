@@ -29,5 +29,6 @@ module.exports = {
       },
     ],
     '@typescript-eslint/no-empty-interface': 'off',
+    'prefer-const': 'off',
   },
 }

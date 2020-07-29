@@ -1,25 +1,19 @@
 import React from 'react'
-// import PropTypes from 'prop-types'
-import { Input, Flex, Heading, Icon, Text } from '@chakra-ui/core'
+import { Input, Flex, Heading, Stack, Icon, Text } from '@chakra-ui/core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { commonShadow } from '../common'
+import {
+  faHeadphones,
+  faCamera,
+  faHammer,
+  faBasketballBall,
+  faLaptopCode,
+  faGraduationCap,
+  faMusic,
+} from '@fortawesome/free-solid-svg-icons'
 
 const bigBorder = '35px'
 const maxBorder = '50px'
-
-// Item.propTypes = {
-//   icon: PropTypes.string.isRequired,
-// }
-
-function Item({ children, ...props }: any) {
-  return (
-    <Flex alignItems="center" margin="7px 25px 7px 20px">
-      <Icon color="gray.400" name={props.icon} marginRight="30px"></Icon>
-      <Text color="gray.400" fontSize="sm">
-        {children}
-      </Text>
-    </Flex>
-  )
-}
 
 export default function FindInterface() {
   return (
@@ -31,13 +25,69 @@ export default function FindInterface() {
         padding="15px"
         borderRadius={bigBorder}
       >
-        <Item icon="check">Education</Item>
-        <Item icon="check">Gaming</Item>
-        <Item icon="check">Movies & TV</Item>
-        <Item icon="check">Music</Item>
-        <Item icon="check">Politics</Item>
-        <Item icon="check">Sports</Item>
-        <Item icon="check">Technology</Item>
+        <Stack>
+          <FontAwesomeIcon
+            color="#979797"
+            size="lg"
+            cursor="pointer"
+            icon={faGraduationCap}
+          />
+          <Text>Education</Text>
+        </Stack>
+        <Stack>
+          <FontAwesomeIcon
+            color="#979797"
+            size="lg"
+            cursor="pointer"
+            icon={faHeadphones}
+          />
+          <Text>Gaming</Text>
+        </Stack>
+        <Stack>
+          <FontAwesomeIcon
+            color="#979797"
+            size="lg"
+            cursor="pointer"
+            icon={faCamera}
+          />
+          <Text>Movies & TV</Text>
+        </Stack>
+        <Stack>
+          <FontAwesomeIcon
+            color="#979797"
+            size="lg"
+            cursor="pointer"
+            icon={faMusic}
+          />
+          <Text>Music</Text>
+        </Stack>
+        <Stack>
+          <FontAwesomeIcon
+            color="#979797"
+            size="lg"
+            cursor="pointer"
+            icon={faHammer}
+          />
+          <Text>Politics</Text>
+        </Stack>
+        <Stack>
+          <FontAwesomeIcon
+            color="#979797"
+            size="lg"
+            cursor="pointer"
+            icon={faBasketballBall}
+          />
+          <Text>Sports</Text>
+        </Stack>
+        <Stack>
+          <FontAwesomeIcon
+            color="#979797"
+            size="lg"
+            cursor="pointer"
+            icon={faLaptopCode}
+          />
+          <Text>Technology</Text>
+        </Stack>
       </Flex>
       <Flex
         flexDirection="column"
