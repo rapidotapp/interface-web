@@ -1,7 +1,7 @@
 import React from 'react'
 // import PropTypes from 'prop-types'
 import { Input, Flex, Heading, Icon, Text } from '@chakra-ui/core'
-import { commonShadow } from './atoms/common'
+import { commonShadow } from '../common'
 
 const bigBorder = '35px'
 const maxBorder = '50px'
@@ -78,6 +78,7 @@ export default function FindInterface() {
         </Flex>
         <Input
           backgroundColor="white"
+          color="black"
           borderRadius={maxBorder}
           placeholder="Basic usage"
         />

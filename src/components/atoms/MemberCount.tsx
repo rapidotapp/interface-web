@@ -1,6 +1,6 @@
 import React from 'react'
 import { Text, Box, Flex } from '@chakra-ui/core'
-import { smallBorderRadius } from './common'
+import { smallBorderRadius } from '../common'
 import * as util from '../../util'
 
 interface IMemberCount {

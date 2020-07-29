@@ -21,6 +21,7 @@ import {
 
 export default { title: 'FriendList' }
 
+// TODO: refactor this out to separate component
 /**
  * @typedef userSchema
  * @property {string} Name

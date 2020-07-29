@@ -1,6 +1,6 @@
 import React from 'react'
-import ThemeX from '../components/theme'
-import MessageBox from '../components/MessageBox'
+import ThemeX from '../../components/theme'
+import MessageBox from '../../components/molecules/MessageBox'
 
 export default { title: 'MessageBox' }
 

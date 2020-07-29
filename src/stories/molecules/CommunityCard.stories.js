@@ -1,9 +1,9 @@
 import React from 'react'
-import ThemeX from '../components/theme'
-import CommunityCard from '../components/CommunityCard'
-import CommunityCardSmall from '../components/CommunityCardSmall'
+import ThemeX from '../../components/theme'
+import CommunityCard from '../../components/molecules/CommunityCard'
+import CommunityCardSmall from '../../components/molecules/CommunityCardSmall'
 
-export default { title: 'Community Cards' }
+export default { title: 'CommunityCard' }
 
 export const communityCard = () => {
   return (

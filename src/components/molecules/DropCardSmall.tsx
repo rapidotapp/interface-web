@@ -1,6 +1,6 @@
 import React from 'react'
 import { Flex, Image, Box, Text } from '@chakra-ui/core'
-import { commonShadow } from './atoms/common'
+import { commonShadow } from '../common'
 
 export default function DropCardSmall() {
   const borderRadius = '20px'

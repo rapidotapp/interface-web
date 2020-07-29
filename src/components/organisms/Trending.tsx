@@ -1,7 +1,7 @@
 import React from 'react'
-import CommunityCard from './CommunityCard'
+import CommunityCard from '../molecules/CommunityCard'
 
-export default function Recommended() {
+export default function Trending() {
   return (
     <CommunityCard
       title="Rapid"

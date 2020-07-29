@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Image } from '@chakra-ui/core'
 import rapidLogo from '../../assets/img/logo.png'
-import { commonShadow, smallBorderRadius } from './common'
+import { commonShadow, smallBorderRadius } from '../common'
 
 interface ILogobackdrop {
   children?: React.ReactDOM

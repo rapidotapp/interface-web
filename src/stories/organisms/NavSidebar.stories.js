@@ -1,6 +1,6 @@
 import React from 'react'
-import ThemeX from '../components/theme'
-import Sidebar from '../components/NavSidebar'
+import ThemeX from '../../components/theme'
+import Sidebar from '../../components/organisms/NavSidebar'
 
 export default { title: 'NavSidebar' }
 
