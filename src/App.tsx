@@ -1,9 +1,10 @@
 import React, { FunctionComponent } from 'react'
+import Home from './pages/Home'
 
 const App: FunctionComponent = () => {
   return (
     <div>
-      <h1>Rapid</h1>
+      <Home />
     </div>
   )
 }

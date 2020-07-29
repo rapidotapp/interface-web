@@ -67,7 +67,7 @@ export default function Sidebar() {
         <FontAwesomeIcon
           cursor="pointer"
           color="#979797"
-          size="md"
+          size="lg"
           icon={faVideoSlash}
         />
       </Flex>

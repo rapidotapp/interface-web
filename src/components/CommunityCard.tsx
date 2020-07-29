@@ -14,12 +14,12 @@ interface ICommunityCard {
   children?: React.ReactNode
   title: string
   description: string
-  totalMembers: number
+  totalMembers: number | string
 }
 export default function CommunityCard({
   title,
   totalMembers,
-}: ICommunityCard): React.ReactNode {
+}: ICommunityCard): JSX.Element {
   return (
     <Flex
       height={height}
