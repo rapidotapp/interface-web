@@ -83,7 +83,7 @@ export const directMessages = () => {
         borderBottomRightRadius="45px"
         direction="row"
       >
-        <Sidebar />
+        <Sidebar active="dm" />
         <Flex w="100%" justifyContent="center" direction="row">
           <Flex w="85%" paddingY="30px" direction="column">
             <Text fontSize="25px" color="white">

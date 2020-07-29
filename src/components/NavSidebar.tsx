@@ -12,7 +12,11 @@ import {
   faCog,
 } from '@fortawesome/free-solid-svg-icons'
 
-export default function Sidebar() {
+interface navProps {
+  active: string
+}
+
+export default function Sidebar(props: navProps) {
   return (
     <Flex
       direction="column"
@@ -82,28 +86,48 @@ export default function Sidebar() {
         paddingY="75px"
       >
         <FontAwesomeIcon
-          color="#979797"
+          color={props.active === 'dm' ? '#fff' : '#979797'}
           size="lg"
           cursor="pointer"
           icon={faComment}
+          style={
+            props.active === 'dm'
+              ? { filter: 'drop-shadow(0px 0px 10px #4F80E2)' }
+              : {}
+          }
         />
         <FontAwesomeIcon
-          color="#979797"
+          color={props.active === 'explore' ? '#fff' : '#979797'}
           size="lg"
           cursor="pointer"
           icon={faCompass}
+          style={
+            props.active === 'explore'
+              ? { filter: 'drop-shadow(0px 0px 10px #4F80E2)' }
+              : {}
+          }
         />
         <FontAwesomeIcon
-          color="#979797"
+          color={props.active === 'friends' ? '#fff' : '#979797'}
           size="lg"
           cursor="pointer"
           icon={faUsers}
+          style={
+            props.active === 'friends'
+              ? { filter: 'drop-shadow(0px 0px 10px #4F80E2)' }
+              : {}
+          }
         />
         <FontAwesomeIcon
-          color="#979797"
+          color={props.active === 'communities' ? '#fff' : '#979797'}
           size="lg"
           cursor="pointer"
           icon={faGlobeAmericas}
+          style={
+            props.active === 'communities'
+              ? { filter: 'drop-shadow(0px 0px 10px #4F80E2)' }
+              : {}
+          }
         />
       </Flex>
 
