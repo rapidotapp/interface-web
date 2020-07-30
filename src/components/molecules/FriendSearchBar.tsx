@@ -1,13 +1,8 @@
-import {
-  Box,
-  Button,
-  Flex,
-  Icon,
-  Input,
-  InputGroup,
-  InputLeftElement,
-} from '@chakra-ui/core'
+import { Box, Flex } from '@chakra-ui/core'
 import React from 'react'
+
+import FriendSearchBarButton from '../atoms/FriendSearchBarButton'
+import SearchBar from '../atoms/SearchBar'
 
 const FriendSearchBar = () => {
   return (
@@ -25,67 +20,13 @@ const FriendSearchBar = () => {
         paddingX="30px"
       >
         <Flex direction="row" justifyContent="space-between" width="500px">
-          <Button
-            variantColor="black"
-            bg="#42434A"
-            color="#979797"
-            size="md"
-            borderRadius="20px"
-            paddingX="35px"
-            fontWeight="400"
-          >
-            All
-          </Button>
-          <Button
-            variantColor="black"
-            bg="transparent"
-            color="#979797"
-            size="md"
-            borderRadius="20px"
-            paddingX="35px"
-            fontWeight="400"
-            _hover={{
-              bg: '#42434A',
-            }}
-          >
-            Requests
-          </Button>
-          <Button
-            variantColor="black"
-            bg="transparent"
-            color="#979797"
-            size="md"
-            borderRadius="20px"
-            paddingX="35px"
-            fontWeight="400"
-            _hover={{
-              bg: '#42434A',
-            }}
-          >
-            Blocked
-          </Button>
+          <FriendSearchBarButton name="All" isActive={true} />
+          <FriendSearchBarButton name="Requests" isActive={false} />
+          <FriendSearchBarButton name="Blocked" isActive={false} />
         </Flex>
         <Box w="2px" h="60%" bg="#42434A"></Box>
         <Flex>
-          <InputGroup>
-            <InputLeftElement>
-              <Icon name="search" color="#979797" />
-            </InputLeftElement>
-            <Input
-              type="phone"
-              placeholder="Search"
-              variant="filled"
-              bg="#42434A"
-              _hover={{
-                bg: '#42434A',
-              }}
-              color="#979797"
-              fontSize="16px"
-              w="400px"
-              h="40px"
-              borderRadius="20px"
-            />
-          </InputGroup>
+          <SearchBar />
         </Flex>
       </Flex>
     </Flex>
