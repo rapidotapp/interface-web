@@ -15,7 +15,7 @@ import Users from './pages/Users'
 
 const App: FunctionComponent = () => {
   return (
-    <div>
+    <div className="app">
       <ThemeX>
         <Box backgroundColor="#212226">
           <Router>
