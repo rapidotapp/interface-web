@@ -12,7 +12,7 @@ interface ICommunityCardSmall {
 export default function CommunityCardSmall({
   title,
   totalMembers,
-}: ICommunityCardSmall): React.ReactNode {
+}: ICommunityCardSmall): JSX.Element {
   return (
     <Flex
       backgroundColor="#292A2F"
