@@ -33,7 +33,8 @@
     "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
     "lint-workflow": "eslint '*/**/*.{js,ts,tsx}' --quiet",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "postinstall": "patch-package"
   },
   "eslintConfig": {
     "extends": "react-app"
