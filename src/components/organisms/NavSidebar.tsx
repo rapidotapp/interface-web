@@ -85,7 +85,7 @@ export default function Sidebar() {
         justify="space-between"
         paddingY="75px"
       >
-        <Link to="/">
+        <Link to="/chat">
           <FontAwesomeIcon
             color="#979797"
             size="lg"

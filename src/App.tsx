@@ -1,9 +1,14 @@
 import { Box } from '@chakra-ui/core'
 import React, { FunctionComponent } from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import {
+  BrowserRouter as Router,
+  Redirect,
+  Route,
+  Switch,
+} from 'react-router-dom'
 
 import ThemeX from './components/theme'
-import Home from './pages'
+import Chat from './pages/Chat'
 import Explore from './pages/Explore'
 import Globe from './pages/Globe'
 import Users from './pages/Users'
@@ -25,8 +30,11 @@ const App: FunctionComponent = () => {
                 <Route path="/explore">
                   <Explore />
                 </Route>
+                <Route path="/chat">
+                  <Chat />
+                </Route>
                 <Route path="/">
-                  <Home />
+                  <Redirect to="/explore" />
                 </Route>
               </Switch>
             </div>
