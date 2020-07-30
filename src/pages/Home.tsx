@@ -12,7 +12,7 @@ export default function Home(): JSX.Element {
   return (
     <Stack spacing={4} direction="row" width="100%">
       <Box marginRight="25px">
-        <NavSidebar />
+        <NavSidebar active="dm" />
       </Box>
       <Stack spacing={8} marginTop="15px" marginRight="15px" width="100%">
         <FindInterface />

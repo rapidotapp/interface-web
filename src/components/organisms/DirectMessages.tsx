@@ -6,7 +6,6 @@ import SearchBar from '../atoms/SearchBar'
 import WordWithLine from '../atoms/WordWithLine'
 import GroupDmCard from '../molecules/GroupDmCard'
 import UserDmCard from '../molecules/UserDmCard'
-import Sidebar from './NavSidebar'
 
 const DirectMessages = () => {
   return (
@@ -17,7 +16,6 @@ const DirectMessages = () => {
       borderBottomRightRadius="45px"
       direction="row"
     >
-      <Sidebar />
       <Flex w="100%" justifyContent="center" direction="row">
         <Flex w="85%" paddingY="30px" direction="column">
           <Text fontSize="25px" color="white">
