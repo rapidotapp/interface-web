@@ -6,12 +6,12 @@ import NavSidebar from './NavSidebar'
 
 const ErrorOccured = () => <h1>Some error occured</h1>
 
-interface IDisplayNavAndPage {
-  children: JSX.Element[] | JSX.Element
+interface displayNavAndPageProps {
+  children: React.ReactNode
 }
 export default function DisplayNavAndPage({
   children,
-}: IDisplayNavAndPage): JSX.Element {
+}: displayNavAndPageProps): JSX.Element {
   return (
     <Stack spacing={4} direction="row" width="calc(100% - 20px)">
       <Box marginRight="25px">

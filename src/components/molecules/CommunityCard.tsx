@@ -10,8 +10,7 @@ const mediumBorderRadiusBottom = '25px'
 const width = '300px'
 const height = '300px'
 
-interface ICommunityCard {
-  children?: React.ReactNode
+interface communityCardProps {
   title: string
   description: string
   totalMembers: number | string
@@ -19,7 +18,7 @@ interface ICommunityCard {
 export default function CommunityCard({
   title,
   totalMembers,
-}: ICommunityCard): JSX.Element {
+}: communityCardProps): JSX.Element {
   return (
     <Flex
       height={height}

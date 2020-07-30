@@ -1,7 +1,5 @@
-import { Box, Flex, Image } from '@chakra-ui/core'
+import { Flex } from '@chakra-ui/core'
 import {
-  faAt,
-  faCog,
   faComment,
   faCompass,
   faGlobeAmericas,
@@ -13,13 +11,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import IconMentions from '../atoms/IconMentions'
+import IconSettings from '../atoms/IconSettings'
+import UserAvatar from '../atoms/UserAvatar'
 import { commonShadow } from '../common'
 
-interface navProps {
+interface navSidebarProps {
   active: string
 }
 
-export default function Sidebar(props: navProps) {
+export default function NavSidebar(props: navSidebarProps) {
   return (
     <Flex
       direction="column"
@@ -45,28 +46,10 @@ export default function Sidebar(props: navProps) {
         paddingTop="13px"
         paddingBottom="30px"
       >
-        <Box height="45px">
-          <Image
-            size="45px"
-            src="https://www.yourdictionary.com/images/definitions/lg/10750.person.jpg"
-            borderRadius="50%"
-            cursor="pointer"
-            objectFit="cover"
-          />
-          <Box
-            bg="#67e5ae"
-            w="16px"
-            h="16px"
-            position="relative"
-            bottom="15px"
-            left="30px"
-            borderRadius="50%"
-            margin="0px"
-            padding="0px"
-            border="1px solid black"
-            cursor="pointer"
-          ></Box>
-        </Box>
+        <UserAvatar
+          avatarURL="https://www.yourdictionary.com/images/definitions/lg/10750.person.jpg"
+          onlineStatus="online"
+        />
         <FontAwesomeIcon
           color="#979797"
           size="lg"
@@ -154,18 +137,8 @@ export default function Sidebar(props: navProps) {
         paddingTop="110px"
         paddingBottom="13px"
       >
-        <FontAwesomeIcon
-          cursor="pointer"
-          color="#979797"
-          size="lg"
-          icon={faAt}
-        />
-        <FontAwesomeIcon
-          cursor="pointer"
-          color="#979797"
-          size="lg"
-          icon={faCog}
-        />
+        <IconMentions />
+        <IconSettings />
       </Flex>
     </Flex>
   )

@@ -6,6 +6,7 @@ import ImageGrid from '../../components/atoms/ImageGrid'
 import LogoBackdrop from '../../components/atoms/LogoBackdrop'
 import MemberCount from '../../components/atoms/MemberCount'
 import SearchBar from '../../components/atoms/SearchBar'
+import UserAvatar from '../../components/atoms/UserAvatar'
 import WordWithLine from '../../components/atoms/WordWithLine'
 import ThemeX from '../../components/theme'
 
@@ -44,6 +45,15 @@ export const memberCount = () => (
 export const searchBar = () => (
   <ThemeX>
     <SearchBar />
+  </ThemeX>
+)
+
+export const userAvatar = () => (
+  <ThemeX>
+    <UserAvatar
+      avatarURL="https://www.yourdictionary.com/images/definitions/lg/10750.person.jpg"
+      onlineStatus="online"
+    />
   </ThemeX>
 )
 

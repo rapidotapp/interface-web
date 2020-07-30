@@ -5,14 +5,14 @@ import LogoBackdrop from '../atoms/LogoBackdrop'
 import MemberCount from '../atoms/MemberCount'
 import { mediumBorderRadius } from '../common'
 
-interface ICommunityCardSmall {
+interface communityCardSmallProps {
   title: string
   totalMembers: string | number
 }
 export default function CommunityCardSmall({
   title,
   totalMembers,
-}: ICommunityCardSmall): JSX.Element {
+}: communityCardSmallProps): JSX.Element {
   return (
     <Flex
       backgroundColor="#292A2F"
