@@ -32,6 +32,7 @@ const DirectMessages = () => {
               if (dm.isPinned) {
                 return dm
               }
+              return undefined
             })
             .map((dm, index) => (
               <UserDmCard dm={dm} key={index} />
@@ -41,6 +42,7 @@ const DirectMessages = () => {
               if (groupDm.isPinned) {
                 return groupDm
               }
+              return undefined
             })
             .map((groupDm, index) => (
               <GroupDmCard groupDm={groupDm} key={index} />
@@ -51,6 +53,7 @@ const DirectMessages = () => {
               if (!dm.isPinned) {
                 return dm
               }
+              return undefined
             })
             .map((dm, index) => (
               <UserDmCard dm={dm} key={index} />
@@ -60,6 +63,7 @@ const DirectMessages = () => {
               if (!groupDm.isPinned) {
                 return groupDm
               }
+              return undefined
             })
             .map((groupDm, index) => (
               <GroupDmCard groupDm={groupDm} key={index} />
