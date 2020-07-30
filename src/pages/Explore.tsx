@@ -1,34 +1,21 @@
-import { Stack, Text } from '@chakra-ui/core'
+import { Stack } from '@chakra-ui/core'
 import React from 'react'
 
-import GroupHeading from '../components/atoms/GroupHeading'
-import DropsList from '../components/molecules/DropsList'
 import DisplayNavAndPage from '../components/organisms/DisplayNavAndPage'
 import FindInterface from '../components/organisms/FindInterface'
-import Recommended from '../components/organisms/Recommended'
-import Trending from '../components/organisms/Trending'
+import PopularDrops from '../components/organisms/PopularDrops'
+import RecommendedCommunities from '../components/organisms/RecommendedCommunities'
+import TrendingCommunities from '../components/organisms/TrendingCommunities'
 
 export default function ExplorePage() {
   return (
     <DisplayNavAndPage>
       <FindInterface />
-      <GroupHeading>
-        <Text>Drops</Text>
-      </GroupHeading>
-      <DropsList />
+      <PopularDrops />
+      {/* TODO why this spacing not working? @eankeen / Nicholas /  Edwin if you know why / fix this */}
       <Stack spacing={4} marginTop="15px" direction="row">
-        <Stack spacing={4}>
-          <GroupHeading>
-            <Text>Trending</Text>
-          </GroupHeading>
-          <Trending />
-        </Stack>
-        <Stack spacing={4}>
-          <GroupHeading>
-            <Text>Recommended For You</Text>
-          </GroupHeading>
-          <Recommended />
-        </Stack>
+        <TrendingCommunities />
+        <RecommendedCommunities />
       </Stack>
     </DisplayNavAndPage>
   )

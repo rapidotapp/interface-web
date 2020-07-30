@@ -24,10 +24,9 @@ const FriendSearchBar = () => {
           <FriendSearchBarButton name="Requests" isActive={false} />
           <FriendSearchBarButton name="Blocked" isActive={false} />
         </Flex>
+        {/* TODO: dividor component */}
         <Box w="2px" h="60%" bg="#42434A"></Box>
-        <Flex>
-          <SearchBar />
-        </Flex>
+        <SearchBar />
       </Flex>
     </Flex>
   )
