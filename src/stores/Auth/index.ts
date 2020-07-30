@@ -1,5 +1,5 @@
 import { auth } from 'firebase'
-import { action, observable } from 'mobx'
+import { computed, observable } from 'mobx'
 
 const defaultSucc = (user: any) => {
   console.log(`Successfully signed in! \n\n ${JSON.stringify(user, null, 2)}`)
@@ -39,8 +39,8 @@ class AuthStore {
     await auth().signInWithEmailAndPassword(e, p).then(defaultSucc, defaultErr)
   }
 
-  @action
-  public isAuthed() {
+  @computed
+  public get isAuthed() {
     return !!this.user
   }
 }
