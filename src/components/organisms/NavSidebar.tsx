@@ -16,6 +16,7 @@ import IconSettings from '~atoms/IconSettings'
 import UserAvatar from '~atoms/UserAvatar'
 
 import { commonShadow } from '../common'
+import { stdLightGrey } from '../common'
 
 interface navSidebarProps {
   active: string
@@ -52,14 +53,14 @@ export default function NavSidebar(props: navSidebarProps) {
           onlineStatus="online"
         />
         <FontAwesomeIcon
-          color="#979797"
+          color={stdLightGrey}
           size="lg"
           cursor="pointer"
           icon={faMicrophone}
         />
         <FontAwesomeIcon
           cursor="pointer"
-          color="#979797"
+          color={stdLightGrey}
           size="lg"
           icon={faVideoSlash}
         />

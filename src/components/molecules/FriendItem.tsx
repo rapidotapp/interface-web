@@ -7,6 +7,8 @@ import IconCall from '~atoms/IconCall'
 import IconMessage from '~atoms/IconMessage'
 import UserAvatar from '~atoms/UserAvatar'
 
+import { stdLightGrey } from '../common'
+
 interface userSchema {
   name: string
   username: string
@@ -33,7 +35,7 @@ const FriendItem = (props: friendItemProps) => {
           <Text color="#fff" fontSize="lg">
             {props.userSchema.name}
           </Text>
-          <Text color="#979797" fontSize="xs">
+          <Text color={stdLightGrey} fontSize="xs">
             {props.userSchema.username}
           </Text>
         </Box>
@@ -56,7 +58,7 @@ const FriendItem = (props: friendItemProps) => {
           </Box>
         </Flex>
         <Flex direction="row" marginLeft="auto" align="center">
-          <Text color="#979797" marginRight="10px">
+          <Text color={stdLightGrey} marginRight="10px">
             Using
           </Text>
           {props.userSchema.drops.map((drop, index) => (
