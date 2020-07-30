@@ -10,7 +10,9 @@ interface IGroupHeading {
 export default function GroupHeading({ children }: IGroupHeading) {
   return (
     <Flex alignItems="center" padding="10px">
-      <Text fontWeight="semibold">{children}</Text>
+      <Text fontWeight="semibold" fontSize="lg">
+        {children}
+      </Text>
       <Box marginLeft="10px">
         <IoIosArrowForward />
       </Box>

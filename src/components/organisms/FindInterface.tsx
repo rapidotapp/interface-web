@@ -1,5 +1,14 @@
-// import PropTypes from 'prop-types'
-import { Flex, Heading, Icon, Input, Text } from '@chakra-ui/core'
+import { Flex, Heading, Icon, Input, Stack, Text } from '@chakra-ui/core'
+import {
+  faBasketballBall,
+  faCamera,
+  faGraduationCap,
+  faHammer,
+  faHeadphones,
+  faLaptopCode,
+  faMusic,
+} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 
 import { commonShadow } from '../common'
@@ -7,38 +16,85 @@ import { commonShadow } from '../common'
 const bigBorder = '35px'
 const maxBorder = '50px'
 
-// Item.propTypes = {
-//   icon: PropTypes.string.isRequired,
-// }
-
-function Item({ children, ...props }: any) {
-  return (
-    <Flex alignItems="center" margin="7px 25px 7px 20px">
-      <Icon color="gray.400" name={props.icon} marginRight="30px"></Icon>
-      <Text color="gray.400" fontSize="sm">
-        {children}
-      </Text>
-    </Flex>
-  )
-}
-
 export default function FindInterface() {
   return (
-    <Flex width="100%" backgroundColor="#292A2F" borderRadius={bigBorder}>
+    <Flex
+      width="100%"
+      backgroundColor="#292A2F"
+      borderRadius={bigBorder}
+      boxShadow={commonShadow}
+    >
       <Flex
         flexDirection="column"
         backgroundColor="#292A2F"
         boxShadow={commonShadow}
-        padding="15px"
+        padding="25px"
         borderRadius={bigBorder}
+        minWidth="200px"
       >
-        <Item icon="check">Education</Item>
-        <Item icon="check">Gaming</Item>
-        <Item icon="check">Movies & TV</Item>
-        <Item icon="check">Music</Item>
-        <Item icon="check">Politics</Item>
-        <Item icon="check">Sports</Item>
-        <Item icon="check">Technology</Item>
+        <Stack direction="row" alignItems="center" margin="5px">
+          <FontAwesomeIcon
+            color="#979797"
+            size="lg"
+            cursor="pointer"
+            icon={faGraduationCap}
+          />
+          <Text marginLeft="15px">Education</Text>
+        </Stack>
+        <Stack direction="row" alignItems="center" margin="5px">
+          <FontAwesomeIcon
+            color="#979797"
+            size="lg"
+            cursor="pointer"
+            icon={faHeadphones}
+          />
+          <Text marginLeft="15px">Gaming</Text>
+        </Stack>
+        <Stack direction="row" alignItems="center" margin="5px">
+          <FontAwesomeIcon
+            color="#979797"
+            size="lg"
+            cursor="pointer"
+            icon={faCamera}
+          />
+          <Text marginLeft="15px">Movies & TV</Text>
+        </Stack>
+        <Stack direction="row" alignItems="center" margin="5px">
+          <FontAwesomeIcon
+            color="#979797"
+            size="lg"
+            cursor="pointer"
+            icon={faMusic}
+          />
+          <Text marginLeft="15px">Music</Text>
+        </Stack>
+        <Stack direction="row" alignItems="center" margin="5px">
+          <FontAwesomeIcon
+            color="#979797"
+            size="lg"
+            cursor="pointer"
+            icon={faHammer}
+          />
+          <Text marginLeft="15px">Politics</Text>
+        </Stack>
+        <Stack direction="row" alignItems="center" margin="5px">
+          <FontAwesomeIcon
+            color="#979797"
+            size="lg"
+            cursor="pointer"
+            icon={faBasketballBall}
+          />
+          <Text marginLeft="15px">Sports</Text>
+        </Stack>
+        <Stack direction="row" alignItems="center" margin="5px">
+          <FontAwesomeIcon
+            color="#979797"
+            size="lg"
+            cursor="pointer"
+            icon={faLaptopCode}
+          />
+          <Text marginLeft="15px">Technology</Text>
+        </Stack>
       </Flex>
       <Flex
         flexDirection="column"

@@ -10,7 +10,7 @@ export default function DisplayNavAndPage({
   children,
 }: IDisplayNavAndPage): JSX.Element {
   return (
-    <Stack spacing={4} direction="row" width="100%">
+    <Stack spacing={4} direction="row" width="calc(100% - 20px)">
       <Box marginRight="25px">
         <NavSidebar />
       </Box>
