@@ -1,11 +1,12 @@
 import { Flex } from '@chakra-ui/core'
 import React from 'react'
 
-import { offlineUsers, onlineUsers } from '../../util/dummyData'
-import WordWithLine from '../atoms/WordWithLine'
+import { offlineUsers, onlineUsers } from '~/util/dummyData'
+import WordWithLine from '~atoms/WordWithLine'
+import FriendItem from '~molecules/FriendItem'
+import FriendSearchBar from '~molecules/FriendSearchBar'
+
 import { stdLightGrey } from '../common'
-import FriendItem from '../molecules/FriendItem'
-import FriendSearchBar from '../molecules/FriendSearchBar'
 import ThemeX from '../theme'
 
 const FriendList = () => {

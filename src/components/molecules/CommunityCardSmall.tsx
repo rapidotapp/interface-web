@@ -1,9 +1,9 @@
 import { Flex, Text } from '@chakra-ui/core'
 import React from 'react'
 
-import LogoBackdrop from '../atoms/LogoBackdrop'
-import MemberCount from '../atoms/MemberCount'
-import { mediumBorderRadius } from '../common'
+import { mediumBorderRadius } from '~/components/common'
+import LogoBackdrop from '~atoms/LogoBackdrop'
+import MemberCount from '~atoms/MemberCount'
 
 interface communityCardSmallProps {
   title: string
