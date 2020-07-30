@@ -1,7 +1,10 @@
 import { Box, Stack } from '@chakra-ui/core'
 import React from 'react'
+import { ErrorBoundary } from 'react-error-boundary'
 
 import NavSidebar from './NavSidebar'
+
+const ErrorOccured = () => <h1>Some error occured</h1>
 
 interface IDisplayNavAndPage {
   children: JSX.Element[] | JSX.Element
@@ -15,7 +18,9 @@ export default function DisplayNavAndPage({
         <NavSidebar active="dm" />
       </Box>
       <Stack spacing={8} marginTop="15px" width="100%">
-        {children}
+        <ErrorBoundary FallbackComponent={ErrorOccured}>
+          {children}
+        </ErrorBoundary>
       </Stack>
     </Stack>
   )
