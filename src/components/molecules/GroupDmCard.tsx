@@ -1,7 +1,7 @@
 import { Box, Flex, Tag, Text } from '@chakra-ui/core'
 import React from 'react'
 
-import ImageGrid from '../atoms/ImageGrid'
+import ImageGrid from '~atoms/ImageGrid'
 
 interface groupDmCardProps {
   groupDm: {

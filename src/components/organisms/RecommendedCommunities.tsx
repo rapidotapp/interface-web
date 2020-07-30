@@ -1,9 +1,8 @@
-import { Box, Stack } from '@chakra-ui/core'
-import { Text } from '@chakra-ui/core'
+import { Box, Stack, Text } from '@chakra-ui/core'
 import React from 'react'
 
-import GroupHeading from '../atoms/GroupHeading'
-import CommunityCard from '../molecules/CommunityCard'
+import GroupHeading from '~atoms/GroupHeading'
+import CommunityCard from '~molecules/CommunityCard'
 
 export default function RecommendedCommunities() {
   return (

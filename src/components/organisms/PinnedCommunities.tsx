@@ -1,8 +1,8 @@
 import { Box, Stack } from '@chakra-ui/core'
 import React from 'react'
 
-import GroupHeading from '../atoms/GroupHeading'
-import CommunityCardSmall from '../molecules/CommunityCardSmall'
+import GroupHeading from '~atoms/GroupHeading'
+import CommunityCardSmall from '~molecules/CommunityCardSmall'
 
 export default function PinnedCommunities() {
   return (

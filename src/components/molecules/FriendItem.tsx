@@ -1,12 +1,11 @@
-import { Box, Flex, Text } from '@chakra-ui/core'
-import { Divider } from '@chakra-ui/core'
+import { Box, Divider, Flex, Text } from '@chakra-ui/core'
 import { faEllipsisV, faTint } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 
-import IconCall from '../atoms/IconCall'
-import IconMessage from '../atoms/IconMessage'
-import UserAvatar from '../atoms/UserAvatar'
+import IconCall from '~atoms/IconCall'
+import IconMessage from '~atoms/IconMessage'
+import UserAvatar from '~atoms/UserAvatar'
 
 interface userSchema {
   name: string
