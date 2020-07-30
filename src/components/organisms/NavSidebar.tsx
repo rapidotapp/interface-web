@@ -1,4 +1,4 @@
-import { Box, Flex, Image } from '@chakra-ui/core'
+import { Flex } from '@chakra-ui/core'
 import {
   faAt,
   faCog,
@@ -13,9 +13,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import UserAvatar from '../atoms/UserAvatar'
 import { commonShadow } from '../common'
+import FriendItem from '../molecules/FriendItem'
 
-export default function Sidebar() {
+export default function NavSidebar() {
   return (
     <Flex
       direction="column"
@@ -41,28 +43,20 @@ export default function Sidebar() {
         paddingTop="13px"
         paddingBottom="30px"
       >
-        <Box height="45px">
-          <Image
-            size="45px"
-            src="https://www.yourdictionary.com/images/definitions/lg/10750.person.jpg"
-            borderRadius="50%"
-            cursor="pointer"
-            objectFit="cover"
-          />
-          <Box
-            bg="#67e5ae"
-            w="16px"
-            h="16px"
-            position="relative"
-            bottom="15px"
-            left="30px"
-            borderRadius="50%"
-            margin="0px"
-            padding="0px"
-            border="1px solid black"
-            cursor="pointer"
-          ></Box>
-        </Box>
+        <FriendItem
+          userSchema={{
+            name: 'Safin',
+            username: '@safinsingh',
+            imageURL:
+              'https://www.yourdictionary.com/images/definitions/lg/10750.person.jpg',
+            drops: [],
+          }}
+          isOnline={true}
+          index={1}
+          len={3}
+        />
+        <UserAvatar />
+
         <FontAwesomeIcon
           color="#979797"
           size="lg"
