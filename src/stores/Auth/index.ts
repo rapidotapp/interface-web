@@ -1,5 +1,5 @@
 import { auth } from 'firebase'
-import { observable } from 'mobx'
+import { action, observable } from 'mobx'
 
 const defaultSucc = (user: any) => {
   console.log(`Successfully signed in! \n\n ${JSON.stringify(user, null, 2)}`)
