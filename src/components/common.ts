@@ -7,3 +7,4 @@ export const commonShadow = `
 0 16px 16px rgba(0,0,0,0.12)`
 export const smallBorderRadius = '15px'
 export const mediumBorderRadius = '25px'
+export const stdLightGrey = '#979797'

@@ -3,6 +3,7 @@ import React from 'react'
 
 import { offlineUsers, onlineUsers } from '../../util/dummyData'
 import WordWithLine from '../atoms/WordWithLine'
+import { stdLightGrey } from '../common'
 import FriendItem from '../molecules/FriendItem'
 import FriendSearchBar from '../molecules/FriendSearchBar'
 import ThemeX from '../theme'
@@ -14,7 +15,7 @@ const FriendList = () => {
       <Flex w="100%" bg="#242529" justifyContent="center" direction="column">
         <Flex w="100%" justifyContent="center">
           <Flex w="92%" direction="column">
-            <WordWithLine title="Online" color="#979797" />
+            <WordWithLine title="Online" color={stdLightGrey} />
             {onlineUsers.map((u, index) => (
               <FriendItem
                 userSchema={u}
@@ -24,7 +25,7 @@ const FriendList = () => {
                 len={onlineUsers.length}
               />
             ))}
-            <WordWithLine title="Offline" color="#979797" />
+            <WordWithLine title="Offline" color={stdLightGrey} />
             {offlineUsers.map((u, index) => (
               <FriendItem
                 userSchema={u}

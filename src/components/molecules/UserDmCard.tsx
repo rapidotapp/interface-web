@@ -1,6 +1,8 @@
 import { Box, Flex, Image, Tag, Text } from '@chakra-ui/core'
 import React from 'react'
 
+import { stdLightGrey } from '../common'
+
 interface userDmCardProps {
   dm: {
     online: boolean
@@ -44,7 +46,7 @@ const UserDmCard = (props: userDmCardProps) => {
         <Text color="#fff" fontSize="lg">
           {props.dm.name}
         </Text>
-        <Text color="#979797" fontSize="xs">
+        <Text color={stdLightGrey} fontSize="xs">
           {props.dm.username}
         </Text>
       </Box>
