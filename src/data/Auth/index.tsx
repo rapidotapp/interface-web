@@ -1,5 +1,6 @@
 import { auth } from 'firebase'
 import { computed, observable } from 'mobx'
+import React from 'react'
 
 const defaultSucc = (user: any) => {
   console.log(`Successfully signed in! \n\n ${JSON.stringify(user, null, 2)}`)
@@ -11,7 +12,7 @@ const defaultErr = (err: any) => {
   )
 }
 
-class AuthStore {
+class IAuthStore {
   @observable user: any = null
   @observable authPending = true
 
@@ -45,6 +46,16 @@ class AuthStore {
   }
 }
 
-const authStore = new AuthStore()
+export const AuthStore = new IAuthStore()
 
-export default authStore
+export const AuthContext = React.createContext(AuthStore)
+
+export const AuthProvider: React.FunctionComponent<React.ReactNode> = ({
+  children,
+}) => {
+  return (
+    <AuthContext.Provider value={AuthStore}>{children}</AuthContext.Provider>
+  )
+}
+
+export default AuthStore
