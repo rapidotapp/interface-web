@@ -1,16 +1,18 @@
-import React from 'react'
 import { Box, Flex, Image } from '@chakra-ui/core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-  faMicrophone,
-  faVideoSlash,
-  faComment,
-  faCompass,
-  faUsers,
-  faGlobeAmericas,
   faAt,
   faCog,
+  faComment,
+  faCompass,
+  faGlobeAmericas,
+  faMicrophone,
+  faUsers,
+  faVideoSlash,
 } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React from 'react'
+
+import { commonShadow } from '../common'
 
 interface navProps {
   active: string
@@ -29,7 +31,7 @@ export default function Sidebar(props: navProps) {
       align="center"
       justify="space-between"
       paddingY="12px"
-      boxShadow="0px 0px 25px #151618"
+      boxShadow={commonShadow}
     >
       <Flex
         w="70px"
@@ -48,6 +50,7 @@ export default function Sidebar(props: navProps) {
             src="https://www.yourdictionary.com/images/definitions/lg/10750.person.jpg"
             borderRadius="50%"
             cursor="pointer"
+            objectFit="cover"
           />
           <Box
             bg="#67e5ae"

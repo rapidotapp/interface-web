@@ -1,9 +1,9 @@
+import { Box, Flex, Text } from '@chakra-ui/core'
 import React from 'react'
-import { Flex, Text, Box } from '@chakra-ui/core'
 
-import LogoBackdrop from './atoms/LogoBackdrop'
-import MemberCount from './atoms/MemberCount'
-import { commonShadow } from './atoms/common'
+import LogoBackdrop from '../atoms/LogoBackdrop'
+import MemberCount from '../atoms/MemberCount'
+import { commonShadow } from '../common'
 
 const bigBorderRadiusTop = '50px'
 const mediumBorderRadiusBottom = '25px'

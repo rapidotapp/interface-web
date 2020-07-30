@@ -1,6 +1,6 @@
+import { Box, Flex, Text } from '@chakra-ui/core'
 import React from 'react'
-import { Flex, Text, Box } from '@chakra-ui/core'
-import { ArrowRight } from 'react-feather'
+import { IoIosArrowForward } from 'react-icons/io'
 
 interface IGroupHeading {
   children?: JSX.Element
@@ -12,7 +12,7 @@ export default function GroupHeading({ children }: IGroupHeading) {
     <Flex alignItems="center" padding="10px">
       <Text fontWeight="semibold">{children}</Text>
       <Box marginLeft="10px">
-        <ArrowRight />
+        <IoIosArrowForward />
       </Box>
     </Flex>
   )

@@ -1,7 +1,8 @@
+import { Box, Flex, Text } from '@chakra-ui/core'
 import React from 'react'
-import { Text, Box, Flex } from '@chakra-ui/core'
-import { smallBorderRadius } from './common'
+
 import * as util from '../../util'
+import { smallBorderRadius } from '../common'
 
 interface IMemberCount {
   children?: React.ReactDOM

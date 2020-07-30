@@ -1,21 +1,21 @@
-import React from 'react'
 import {
   Button,
+  Flex,
   Input,
   InputGroup,
-  InputRightElement,
-  Flex,
   InputLeftAddon,
+  InputRightElement,
   Popover,
   PopoverArrow,
   PopoverBody,
-  PopoverContent,
-  PopoverTrigger,
   PopoverCloseButton,
-  PopoverHeader,
+  PopoverContent,
   PopoverFooter,
+  PopoverHeader,
+  PopoverTrigger,
 } from '@chakra-ui/core'
-import { Camera, Image, PlusCircle, Smile, File } from 'react-feather'
+import React from 'react'
+import { Camera, File, Image, PlusCircle, Smile } from 'react-feather'
 
 export default function MessageBox() {
   return (

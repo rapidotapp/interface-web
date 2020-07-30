@@ -1,14 +1,14 @@
-import React from 'react'
-import Wave from 'react-wavify'
 import {
+  Button,
+  Heading,
+  Input,
+  InputGroup,
   Stack,
   Text,
   theme,
-  Button,
-  Heading,
-  InputGroup,
-  Input,
 } from '@chakra-ui/core'
+import React from 'react'
+import Wave from 'react-wavify'
 
 export default function Login() {
   return (
