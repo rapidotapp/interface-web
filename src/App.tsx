@@ -9,8 +9,8 @@ import {
 
 import ThemeX from './components/theme'
 import Chat from './pages/Chat'
+import Community from './pages/Community'
 import Explore from './pages/Explore'
-import Globe from './pages/Globe'
 import Users from './pages/Users'
 
 const App: FunctionComponent = () => {
@@ -21,8 +21,8 @@ const App: FunctionComponent = () => {
           <Router>
             <div>
               <Switch>
-                <Route path="/globe">
-                  <Globe />
+                <Route path="/community">
+                  <Community />
                 </Route>
                 <Route path="/users">
                   <Users />

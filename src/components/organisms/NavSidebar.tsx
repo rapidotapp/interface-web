@@ -112,7 +112,7 @@ export default function Sidebar() {
           />
         </Link>
 
-        <Link to="/globe">
+        <Link to="/community">
           <FontAwesomeIcon
             color="#979797"
             size="lg"

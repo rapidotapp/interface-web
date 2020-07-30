@@ -2,7 +2,7 @@ import { Box, Stack } from '@chakra-ui/core'
 import React from 'react'
 
 import { commonShadow, mediumBorderRadius } from '../common'
-import DropCardSmall from './DropCardSmall'
+import CommunityCardSmall from './CommunityCardSmall'
 
 export default function DropList() {
   return (
@@ -16,7 +16,7 @@ export default function DropList() {
         {[1, 2, 3, 4, 5].map((i) => {
           return (
             <Box key={i}>
-              <DropCardSmall />
+              <CommunityCardSmall title="Rapid" totalMembers={1234} />
             </Box>
           )
         })}

@@ -3,7 +3,7 @@ import React from 'react'
 import { IoIosArrowForward } from 'react-icons/io'
 
 interface IGroupHeading {
-  children?: JSX.Element
+  children?: JSX.Element | string
   [key: string]: any
 }
 
