@@ -1,14 +1,17 @@
 import React from 'react'
+import { BrowserRouter as Router } from 'react-router-dom'
 
-import Sidebar from '../../components/organisms/NavSidebar'
+import NavSidebar from '../../components/organisms/NavSidebar'
 import ThemeX from '../../components/theme'
 
-export default { title: 'NavSidebar' }
+export default { title: 'Organisms.NavSidebar' }
 
 export const withText = () => {
   return (
     <ThemeX>
-      <Sidebar />
+      <Router>
+        <NavSidebar />
+      </Router>
     </ThemeX>
   )
 }

@@ -4,7 +4,7 @@ import CommunityCard from '../../components/molecules/CommunityCard'
 import CommunityCardSmall from '../../components/molecules/CommunityCardSmall'
 import ThemeX from '../../components/theme'
 
-export default { title: 'CommunityCard' }
+export default { title: 'Molecules.CommunityCard' }
 
 export const communityCard = () => {
   return (
