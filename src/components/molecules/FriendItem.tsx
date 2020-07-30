@@ -1,4 +1,4 @@
-import { Box, Flex, Image, Text } from '@chakra-ui/core'
+import { Box, Flex, Text } from '@chakra-ui/core'
 import {
   faComment,
   faEllipsisV,
@@ -7,6 +7,8 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
+
+import UserAvatar from '../atoms/UserAvatar'
 
 interface userSchema {
   name: string
@@ -26,32 +28,10 @@ const FriendItem = (props: friendItemProps) => {
   return (
     <Flex direction="column">
       <Flex direction="row" align="center" marginBottom="17px">
-        <Box height="45px">
-          <Image
-            size="45px"
-            src={props.userSchema.imageURL}
-            borderRadius="50%"
-            cursor="pointer"
-          />
-          <Flex
-            bg={props.isOnline ? '#67e5ae' : '#000'}
-            w="16px"
-            h="16px"
-            position="relative"
-            bottom="15px"
-            left="30px"
-            borderRadius="50%"
-            margin="0px"
-            padding="0px"
-            border="1px solid black"
-            align="center"
-            justify="center"
-          >
-            {!props.isOnline && (
-              <Box bg="#242529" w="8px" h="8px" borderRadius="50%"></Box>
-            )}
-          </Flex>
-        </Box>
+        <UserAvatar
+          avatarURL={props.userSchema.imageURL}
+          onlineStatus={props.isOnline ? 'online' : 'offline'}
+        />
         <Box marginLeft="20px">
           <Text color="#fff" fontSize="lg">
             {props.userSchema.name}

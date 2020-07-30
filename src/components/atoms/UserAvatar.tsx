@@ -5,6 +5,7 @@ interface userAvatarProps {
   avatarURL: string
   onlineStatus: 'online' | 'offline'
 }
+
 export default function UserAvatar(props: userAvatarProps) {
   let onlineStatusBackgroundIndicator: null | string = null
   switch (props.onlineStatus) {
@@ -25,6 +26,7 @@ export default function UserAvatar(props: userAvatarProps) {
         src={props.avatarURL}
         borderRadius="50%"
         cursor="pointer"
+        objectFit="cover"
       />
       <Flex
         bg={onlineStatusBackgroundIndicator}

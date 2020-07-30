@@ -15,7 +15,6 @@ import { Link } from 'react-router-dom'
 
 import UserAvatar from '../atoms/UserAvatar'
 import { commonShadow } from '../common'
-import FriendItem from '../molecules/FriendItem'
 
 export default function NavSidebar() {
   return (
@@ -43,20 +42,10 @@ export default function NavSidebar() {
         paddingTop="13px"
         paddingBottom="30px"
       >
-        <FriendItem
-          userSchema={{
-            name: 'Safin',
-            username: '@safinsingh',
-            imageURL:
-              'https://www.yourdictionary.com/images/definitions/lg/10750.person.jpg',
-            drops: [],
-          }}
-          isOnline={true}
-          index={1}
-          len={3}
+        <UserAvatar
+          avatarURL="https://www.yourdictionary.com/images/definitions/lg/10750.person.jpg"
+          onlineStatus={'online'}
         />
-        <UserAvatar />
-
         <FontAwesomeIcon
           color="#979797"
           size="lg"
