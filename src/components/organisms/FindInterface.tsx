@@ -38,6 +38,7 @@ export default function FindInterface() {
             size="lg"
             cursor="pointer"
             icon={faGraduationCap}
+            fixedWidth
           />
           <Text color={stdLightGrey} marginLeft="15px">
             Education
@@ -49,6 +50,7 @@ export default function FindInterface() {
             size="lg"
             cursor="pointer"
             icon={faHeadphones}
+            fixedWidth
           />
           <Text color={stdLightGrey} marginLeft="15px">
             Gaming
@@ -60,6 +62,7 @@ export default function FindInterface() {
             size="lg"
             cursor="pointer"
             icon={faCamera}
+            fixedWidth
           />
           <Text color={stdLightGrey} marginLeft="15px">
             Movies & TV
@@ -71,6 +74,7 @@ export default function FindInterface() {
             size="lg"
             cursor="pointer"
             icon={faMusic}
+            fixedWidth
           />
           <Text color={stdLightGrey} marginLeft="15px">
             Music
@@ -82,6 +86,7 @@ export default function FindInterface() {
             size="lg"
             cursor="pointer"
             icon={faHammer}
+            fixedWidth
           />
           <Text color={stdLightGrey} marginLeft="15px">
             Politics
@@ -93,6 +98,7 @@ export default function FindInterface() {
             size="lg"
             cursor="pointer"
             icon={faBasketballBall}
+            fixedWidth
           />
           <Text color={stdLightGrey} marginLeft="15px">
             Sports
@@ -104,6 +110,7 @@ export default function FindInterface() {
             size="lg"
             cursor="pointer"
             icon={faLaptopCode}
+            fixedWidth
           />
           <Text color={stdLightGrey} marginLeft="15px">
             Technology
