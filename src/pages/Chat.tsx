@@ -1,11 +1,11 @@
 import React from 'react'
 
-import DisplayNavAndPage from '../components/organisms/DisplayNavAndPage'
+import NavLayout from '../components/organisms/DisplayNavAndPage'
 
 export default function Chat(): JSX.Element {
   return (
-    <DisplayNavAndPage>
+    <NavLayout>
       <h1>Messages</h1>
-    </DisplayNavAndPage>
+    </NavLayout>
   )
 }
