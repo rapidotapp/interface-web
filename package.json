@@ -11,6 +11,7 @@
     "@fortawesome/react-fontawesome": "^0.1.11",
     "@types/react-router-dom": "^5.1.5",
     "emotion-theming": "^10.0.27",
+    "firebase": "^7.17.1",
     "mobx": "^5.15.4",
     "mobx-react-lite": "^2.0.7",
     "node-sass": "^4.14.1",
