@@ -18,6 +18,8 @@ interface userSchema {
 interface friendItemProps {
   userSchema: userSchema
   isOnline: boolean
+  index: number
+  len: number
 }
 
 const FriendItem = (props: friendItemProps) => {
@@ -124,7 +126,12 @@ const FriendItem = (props: friendItemProps) => {
           ))}
         </Flex>
       </Flex>
-      <Box w="100%" h="1px" bg="#42434A" marginBottom="10px"></Box>
+      <Box
+        w="100%"
+        h="1px"
+        bg={props.index !== props.len - 1 ? '#42434A' : 'transparent'}
+        marginBottom="10px"
+      ></Box>
     </Flex>
   )
 }
