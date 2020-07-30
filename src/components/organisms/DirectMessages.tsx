@@ -1,11 +1,11 @@
 import { Box, Flex, Text } from '@chakra-ui/core'
 import React from 'react'
 
-import { dms, groupDms } from '../../util/dummyData'
-import SearchBar from '../atoms/SearchBar'
-import WordWithLine from '../atoms/WordWithLine'
-import GroupDmCard from '../molecules/GroupDmCard'
-import UserDmCard from '../molecules/UserDmCard'
+import { dms, groupDms } from '~/util/dummyData'
+import SearchBar from '~atoms/SearchBar'
+import WordWithLine from '~atoms/WordWithLine'
+import GroupDmCard from '~molecules/GroupDmCard'
+import UserDmCard from '~molecules/UserDmCard'
 
 const DirectMessages = () => {
   return (

@@ -1,8 +1,8 @@
 import { Stack, Text } from '@chakra-ui/core'
 import React from 'react'
 
-import GroupHeading from '../atoms/GroupHeading'
-import CommunityCard from '../molecules/CommunityCard'
+import GroupHeading from '~atoms/GroupHeading'
+import CommunityCard from '~molecules/CommunityCard'
 
 export default function Trending() {
   return (

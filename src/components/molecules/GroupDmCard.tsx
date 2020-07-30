@@ -1,7 +1,9 @@
 import { Box, Flex, Tag, Text } from '@chakra-ui/core'
 import React from 'react'
 
-import ImageGrid from '../atoms/ImageGrid'
+import ImageGrid from '~atoms/ImageGrid'
+
+import { stdLightGrey } from '../common'
 
 interface groupDmCardProps {
   groupDm: {
@@ -20,7 +22,7 @@ const GroupDmCard = (props: groupDmCardProps) => {
         <Text color="#fff" fontSize="lg">
           {props.groupDm.name}
         </Text>
-        <Text color="#979797" fontSize="xs">
+        <Text color={stdLightGrey} fontSize="xs">
           {props.groupDm.online} online
         </Text>
       </Box>

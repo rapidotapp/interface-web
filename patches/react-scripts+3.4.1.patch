@@ -1,0 +1,22 @@
+diff --git a/node_modules/react-scripts/scripts/utils/verifyTypeScriptSetup.js b/node_modules/react-scripts/scripts/utils/verifyTypeScriptSetup.js
+index ebd93d7..c94ffbc 100644
+--- a/node_modules/react-scripts/scripts/utils/verifyTypeScriptSetup.js
++++ b/node_modules/react-scripts/scripts/utils/verifyTypeScriptSetup.js
+@@ -239,7 +239,7 @@ function verifyTypeScriptSetup() {
+     } else {
+       console.warn(
+         chalk.bold(
+-          'The following changes are being made to your',
++          'The following changes are [NOT (this has been patched out)] being made to your',
+           chalk.cyan('tsconfig.json'),
+           'file:'
+         )
+@@ -249,7 +249,7 @@ function verifyTypeScriptSetup() {
+       });
+       console.warn();
+     }
+-    writeJson(paths.appTsConfig, appTsConfig);
++    // writeJson(paths.appTsConfig, appTsConfig);
+   }
+ 
+   // Reference `react-scripts` types

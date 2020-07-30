@@ -1,8 +1,8 @@
 import { Box, Flex } from '@chakra-ui/core'
 import React from 'react'
 
-import FriendSearchBarButton from '../atoms/FriendSearchBarButton'
-import SearchBar from '../atoms/SearchBar'
+import FriendSearchBarButton from '~atoms/FriendSearchBarButton'
+import SearchBar from '~atoms/SearchBar'
 
 const FriendSearchBar = () => {
   return (

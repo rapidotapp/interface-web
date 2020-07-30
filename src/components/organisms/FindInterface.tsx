@@ -11,7 +11,7 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 
-import { commonShadow } from '../common'
+import { commonShadow, stdLightGrey } from '../common'
 
 const bigBorder = '35px'
 const maxBorder = '50px'
@@ -34,59 +34,63 @@ export default function FindInterface() {
       >
         <Stack direction="row" alignItems="center" margin="8px">
           <FontAwesomeIcon
-            color="#979797"
+            color={stdLightGrey}
             cursor="pointer"
             icon={faGraduationCap}
+            fixedWidth
           />
-          <Text marginLeft="15px" fontSize="13px">
+          <Text color={stdLightGrey} marginLeft="15px" fontSize="13px">
             Education
           </Text>
         </Stack>
         <Stack direction="row" alignItems="center" margin="8px">
           <FontAwesomeIcon
-            color="#979797"
+            color={stdLightGrey}
             cursor="pointer"
             icon={faHeadphones}
+            fixedWidth
           />
-          <Text marginLeft="15px" fontSize="13px">
+          <Text color={stdLightGrey} marginLeft="15px" fontSize="13px">
             Gaming
           </Text>
         </Stack>
         <Stack direction="row" alignItems="center" margin="8px">
-          <FontAwesomeIcon color="#979797" cursor="pointer" icon={faCamera} />
+          <FontAwesomeIcon color={stdLightGrey} cursor="pointer" icon={faCamera} fixedWidth />
           <Text marginLeft="15px" fontSize="13px">
             Movies & TV
           </Text>
         </Stack>
         <Stack direction="row" alignItems="center" margin="8px">
-          <FontAwesomeIcon color="#979797" cursor="pointer" icon={faMusic} />
+          <FontAwesomeIcon color={stdLightGrey} cursor="pointer" icon={faMusic} fixedWidth />
           <Text marginLeft="15px" fontSize="13px">
             Music
           </Text>
         </Stack>
         <Stack direction="row" alignItems="center" margin="8px">
-          <FontAwesomeIcon color="#979797" cursor="pointer" icon={faHammer} />
+          <FontAwesomeIcon color={stdLightGrey} cursor="pointer" icon={faHammer} fixedWidth />
           <Text marginLeft="15px" fontSize="13px">
             Politics
           </Text>
         </Stack>
         <Stack direction="row" alignItems="center" margin="8px">
           <FontAwesomeIcon
-            color="#979797"
+            color={stdLightGrey}
             cursor="pointer"
             icon={faBasketballBall}
+            fixedWidth
           />
-          <Text marginLeft="15px" fontSize="13px">
+          <Text color={stdLightGrey} marginLeft="15px" fontSize="13px">
             Sports
           </Text>
         </Stack>
         <Stack direction="row" alignItems="center" margin="8px">
           <FontAwesomeIcon
-            color="#979797"
+            color={stdLightGrey}
             cursor="pointer"
             icon={faLaptopCode}
+            fixedWidth
           />
-          <Text marginLeft="15px" fontSize="13px">
+          <Text color={stdLightGrey} marginLeft="15px" fontSize="13px">
             Technology
           </Text>
         </Stack>
@@ -99,7 +103,7 @@ export default function FindInterface() {
         margin="30px"
       >
         <Flex margin="25px" alignItems="center">
-          <Heading as="h3" size="lg" fontWeight="semibold">
+          <Heading color="gray.100" as="h3" size="lg" fontWeight="semibold">
             Find new
           </Heading>
           <Flex
@@ -114,7 +118,7 @@ export default function FindInterface() {
               borderRadius={maxBorder}
             >
               <Icon color="gray.100" name="phone" paddingRight="8px"></Icon>
-              <Text fontSize="xl" fontWeight="semibold">
+              <Text color="gray.100" fontSize="xl" fontWeight="semibold">
                 Drops
               </Text>
             </Flex>
