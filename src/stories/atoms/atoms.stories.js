@@ -7,7 +7,7 @@ import MemberCount from '../../components/atoms/MemberCount'
 import SearchBar from '../../components/atoms/SearchBar'
 import ThemeX from '../../components/theme'
 
-export default { title: 'Atoms' }
+export default { title: 'atoms' }
 
 export const logoBackdrop = () => (
   <ThemeX>

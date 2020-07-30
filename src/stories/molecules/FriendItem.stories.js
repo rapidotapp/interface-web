@@ -3,7 +3,7 @@ import React from 'react'
 import FriendItem from '../../components/molecules/FriendItem'
 import ThemeX from '../../components/theme'
 
-export default { title: 'FriendItem' }
+export default { title: 'Molecules.FriendItem' }
 
 export const friendItem = () => {
   return (
