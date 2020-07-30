@@ -11,6 +11,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import { commonShadow } from '../common'
 
@@ -88,50 +89,58 @@ export default function Sidebar(props: navProps) {
         justify="space-between"
         paddingY="75px"
       >
-        <FontAwesomeIcon
-          color={props.active === 'dm' ? '#fff' : '#979797'}
-          size="lg"
-          cursor="pointer"
-          icon={faComment}
-          style={
-            props.active === 'dm'
-              ? { filter: 'drop-shadow(0px 0px 10px #4F80E2)' }
-              : {}
-          }
-        />
-        <FontAwesomeIcon
-          color={props.active === 'explore' ? '#fff' : '#979797'}
-          size="lg"
-          cursor="pointer"
-          icon={faCompass}
-          style={
-            props.active === 'explore'
-              ? { filter: 'drop-shadow(0px 0px 10px #4F80E2)' }
-              : {}
-          }
-        />
-        <FontAwesomeIcon
-          color={props.active === 'friends' ? '#fff' : '#979797'}
-          size="lg"
-          cursor="pointer"
-          icon={faUsers}
-          style={
-            props.active === 'friends'
-              ? { filter: 'drop-shadow(0px 0px 10px #4F80E2)' }
-              : {}
-          }
-        />
-        <FontAwesomeIcon
-          color={props.active === 'communities' ? '#fff' : '#979797'}
-          size="lg"
-          cursor="pointer"
-          icon={faGlobeAmericas}
-          style={
-            props.active === 'communities'
-              ? { filter: 'drop-shadow(0px 0px 10px #4F80E2)' }
-              : {}
-          }
-        />
+        <Link to="/chat">
+          <FontAwesomeIcon
+            color={props.active === 'dm' ? '#fff' : '#979797'}
+            size="lg"
+            cursor="pointer"
+            icon={faComment}
+            style={
+              props.active === 'dm'
+                ? { filter: 'drop-shadow(0px 0px 10px #4F80E2)' }
+                : {}
+            }
+          />
+        </Link>
+        <Link to="/explore">
+          <FontAwesomeIcon
+            color={props.active === 'explore' ? '#fff' : '#979797'}
+            size="lg"
+            cursor="pointer"
+            icon={faCompass}
+            style={
+              props.active === 'explore'
+                ? { filter: 'drop-shadow(0px 0px 10px #4F80E2)' }
+                : {}
+            }
+          />
+        </Link>
+        <Link to="/users">
+          <FontAwesomeIcon
+            color={props.active === 'friends' ? '#fff' : '#979797'}
+            size="lg"
+            cursor="pointer"
+            icon={faUsers}
+            style={
+              props.active === 'friends'
+                ? { filter: 'drop-shadow(0px 0px 10px #4F80E2)' }
+                : {}
+            }
+          />
+        </Link>
+        <Link to="/community">
+          <FontAwesomeIcon
+            color={props.active === 'communities' ? '#fff' : '#979797'}
+            size="lg"
+            cursor="pointer"
+            icon={faGlobeAmericas}
+            style={
+              props.active === 'communities'
+                ? { filter: 'drop-shadow(0px 0px 10px #4F80E2)' }
+                : {}
+            }
+          />
+        </Link>
       </Flex>
 
       <Flex
