@@ -4,12 +4,12 @@ import React from 'react'
 import GroupHeading from '../components/atoms/GroupHeading'
 import CommunityCardSmall from '../components/molecules/CommunityCardSmall'
 import Search from '../components/molecules/Search'
-import DisplayNavAndPage from '../components/organisms/DisplayNavAndPage'
+import NavLayout from '../components/organisms/DisplayNavAndPage'
 
 interface ICommunityPage {}
 export default function Community() {
   return (
-    <DisplayNavAndPage>
+    <NavLayout>
       <Flex alignItems="flex-end" marginLeft="auto" width="100%">
         <Search />
       </Flex>
@@ -39,6 +39,6 @@ export default function Community() {
           )
         })}
       </Stack>
-    </DisplayNavAndPage>
+    </NavLayout>
   )
 }

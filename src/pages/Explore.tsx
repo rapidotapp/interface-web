@@ -3,7 +3,7 @@ import React from 'react'
 
 import GroupHeading from '../components/atoms/GroupHeading'
 import DropsList from '../components/molecules/DropsList'
-import DisplayNavAndPage from '../components/organisms/DisplayNavAndPage'
+import NavLayout from '../components/organisms/DisplayNavAndPage'
 import FindInterface from '../components/organisms/FindInterface'
 import Recommended from '../components/organisms/Recommended'
 import Trending from '../components/organisms/Trending'
@@ -11,7 +11,7 @@ import Trending from '../components/organisms/Trending'
 interface IExplorePage {}
 export default function ExplorePage() {
   return (
-    <DisplayNavAndPage>
+    <NavLayout>
       <FindInterface />
       <GroupHeading>
         <Text>Drops</Text>
@@ -31,6 +31,6 @@ export default function ExplorePage() {
           <Recommended />
         </Stack>
       </Stack>
-    </DisplayNavAndPage>
+    </NavLayout>
   )
 }

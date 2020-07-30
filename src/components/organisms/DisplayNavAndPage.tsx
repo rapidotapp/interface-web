@@ -9,7 +9,7 @@ const ErrorOccured = () => <h1>Some error occured</h1>
 interface IDisplayNavAndPage {
   children: JSX.Element[] | JSX.Element
 }
-export default function DisplayNavAndPage({
+export default function NavLayout({
   children,
 }: IDisplayNavAndPage): JSX.Element {
   return (
