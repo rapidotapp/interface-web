@@ -13,7 +13,7 @@ export default function DisplayNavAndPage({
   return (
     <Stack spacing={4} direction="row" width="calc(100% - 20px)">
       <Box marginRight="25px">
-        <NavSidebar />
+        <NavSidebar active="dm" />
       </Box>
       <Stack spacing={8} marginTop="15px" width="100%">
         {children}

@@ -4,7 +4,7 @@ import DropCardSmall from '../../components/molecules/DropCardSmall'
 import ThemeX from '../../components/theme'
 
 export default {
-  title: 'DropCard',
+  title: 'Molecules.DropCard',
 }
 
 export const dropCardSmall = () => (
