@@ -7,7 +7,7 @@ import Search from '../components/molecules/Search'
 import DisplayNavAndPage from '../components/organisms/DisplayNavAndPage'
 
 interface ICommunityPage {}
-export default function Community({}: ICommunityPage) {
+export default function Community() {
   return (
     <DisplayNavAndPage>
       <Flex alignItems="flex-end" marginLeft="auto" width="100%">
