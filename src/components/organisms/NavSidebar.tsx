@@ -1,7 +1,5 @@
 import { Flex } from '@chakra-ui/core'
 import {
-  faAt,
-  faCog,
   faComment,
   faCompass,
   faGlobeAmericas,
@@ -13,6 +11,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import IconMentions from '../atoms/IconMentions'
+import IconSettings from '../atoms/IconSettings'
 import UserAvatar from '../atoms/UserAvatar'
 import { commonShadow } from '../common'
 
@@ -44,7 +44,7 @@ export default function NavSidebar() {
       >
         <UserAvatar
           avatarURL="https://www.yourdictionary.com/images/definitions/lg/10750.person.jpg"
-          onlineStatus={'online'}
+          onlineStatus="online"
         />
         <FontAwesomeIcon
           color="#979797"
@@ -116,18 +116,8 @@ export default function NavSidebar() {
         paddingTop="110px"
         paddingBottom="13px"
       >
-        <FontAwesomeIcon
-          cursor="pointer"
-          color="#979797"
-          size="lg"
-          icon={faAt}
-        />
-        <FontAwesomeIcon
-          cursor="pointer"
-          color="#979797"
-          size="lg"
-          icon={faCog}
-        />
+        <IconMentions />
+        <IconSettings />
       </Flex>
     </Flex>
   )
