@@ -4,16 +4,14 @@ import React from 'react'
 import * as util from '../../util'
 import { smallBorderRadius } from '../common'
 
-interface IMemberCount {
-  children?: React.ReactDOM
+interface memberCountProps {
   totalMembers: string | number
   [key: string]: any
 }
 export default function MemberCount({
-  children,
   totalMembers,
   ...props
-}: IMemberCount) {
+}: memberCountProps) {
   return (
     <Flex alignItems="center" marginTop="12px" {...props}>
       <Box

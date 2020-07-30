@@ -8,7 +8,6 @@ import FindInterface from '../components/organisms/FindInterface'
 import Recommended from '../components/organisms/Recommended'
 import Trending from '../components/organisms/Trending'
 
-interface IExplorePage {}
 export default function ExplorePage() {
   return (
     <DisplayNavAndPage>

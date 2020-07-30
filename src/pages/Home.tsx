@@ -8,7 +8,7 @@ import NavSidebar from '../components/organisms/NavSidebar'
 import Recommended from '../components/organisms/Recommended'
 import Trending from '../components/organisms/Trending'
 
-export default function Home(): JSX.Element {
+export default function Home() {
   return (
     <Stack spacing={4} direction="row" width="100%">
       <Box marginRight="25px">

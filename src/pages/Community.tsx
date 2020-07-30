@@ -6,7 +6,6 @@ import CommunityCardSmall from '../components/molecules/CommunityCardSmall'
 import Search from '../components/molecules/Search'
 import DisplayNavAndPage from '../components/organisms/DisplayNavAndPage'
 
-interface ICommunityPage {}
 export default function Community() {
   return (
     <DisplayNavAndPage>
