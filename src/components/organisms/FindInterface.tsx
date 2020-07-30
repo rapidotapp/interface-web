@@ -32,68 +32,63 @@ export default function FindInterface() {
         borderRadius={bigBorder}
         minWidth="200px"
       >
-        <Stack direction="row" alignItems="center" margin="5px">
+        <Stack direction="row" alignItems="center" margin="8px">
           <FontAwesomeIcon
             color="#979797"
-            size="lg"
             cursor="pointer"
             icon={faGraduationCap}
           />
-          <Text marginLeft="15px">Education</Text>
+          <Text marginLeft="15px" fontSize="13px">
+            Education
+          </Text>
         </Stack>
-        <Stack direction="row" alignItems="center" margin="5px">
+        <Stack direction="row" alignItems="center" margin="8px">
           <FontAwesomeIcon
             color="#979797"
-            size="lg"
             cursor="pointer"
             icon={faHeadphones}
           />
-          <Text marginLeft="15px">Gaming</Text>
+          <Text marginLeft="15px" fontSize="13px">
+            Gaming
+          </Text>
         </Stack>
-        <Stack direction="row" alignItems="center" margin="5px">
+        <Stack direction="row" alignItems="center" margin="8px">
+          <FontAwesomeIcon color="#979797" cursor="pointer" icon={faCamera} />
+          <Text marginLeft="15px" fontSize="13px">
+            Movies & TV
+          </Text>
+        </Stack>
+        <Stack direction="row" alignItems="center" margin="8px">
+          <FontAwesomeIcon color="#979797" cursor="pointer" icon={faMusic} />
+          <Text marginLeft="15px" fontSize="13px">
+            Music
+          </Text>
+        </Stack>
+        <Stack direction="row" alignItems="center" margin="8px">
+          <FontAwesomeIcon color="#979797" cursor="pointer" icon={faHammer} />
+          <Text marginLeft="15px" fontSize="13px">
+            Politics
+          </Text>
+        </Stack>
+        <Stack direction="row" alignItems="center" margin="8px">
           <FontAwesomeIcon
             color="#979797"
-            size="lg"
-            cursor="pointer"
-            icon={faCamera}
-          />
-          <Text marginLeft="15px">Movies & TV</Text>
-        </Stack>
-        <Stack direction="row" alignItems="center" margin="5px">
-          <FontAwesomeIcon
-            color="#979797"
-            size="lg"
-            cursor="pointer"
-            icon={faMusic}
-          />
-          <Text marginLeft="15px">Music</Text>
-        </Stack>
-        <Stack direction="row" alignItems="center" margin="5px">
-          <FontAwesomeIcon
-            color="#979797"
-            size="lg"
-            cursor="pointer"
-            icon={faHammer}
-          />
-          <Text marginLeft="15px">Politics</Text>
-        </Stack>
-        <Stack direction="row" alignItems="center" margin="5px">
-          <FontAwesomeIcon
-            color="#979797"
-            size="lg"
             cursor="pointer"
             icon={faBasketballBall}
           />
-          <Text marginLeft="15px">Sports</Text>
+          <Text marginLeft="15px" fontSize="13px">
+            Sports
+          </Text>
         </Stack>
-        <Stack direction="row" alignItems="center" margin="5px">
+        <Stack direction="row" alignItems="center" margin="8px">
           <FontAwesomeIcon
             color="#979797"
-            size="lg"
             cursor="pointer"
             icon={faLaptopCode}
           />
-          <Text marginLeft="15px">Technology</Text>
+          <Text marginLeft="15px" fontSize="13px">
+            Technology
+          </Text>
         </Stack>
       </Flex>
       <Flex

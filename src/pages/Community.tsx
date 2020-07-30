@@ -7,7 +7,7 @@ import PinnedCommunities from '../components/organisms/PinnedCommunities'
 
 export default function Community() {
   return (
-    <DisplayNavAndPage>
+    <DisplayNavAndPage active="community">
       <Search />
       <PinnedCommunities />
       <AllCommunities />

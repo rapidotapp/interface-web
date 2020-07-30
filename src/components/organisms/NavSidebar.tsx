@@ -74,12 +74,12 @@ export default function NavSidebar(props: navSidebarProps) {
       >
         <Link to="/chat">
           <FontAwesomeIcon
-            color={props.active === 'dm' ? '#fff' : '#979797'}
+            color={props.active === 'chat' ? '#fff' : '#979797'}
             size="lg"
             cursor="pointer"
             icon={faComment}
             style={
-              props.active === 'dm'
+              props.active === 'chat'
                 ? { filter: 'drop-shadow(0px 0px 10px #4F80E2)' }
                 : {}
             }
@@ -113,12 +113,12 @@ export default function NavSidebar(props: navSidebarProps) {
         </Link>
         <Link to="/community">
           <FontAwesomeIcon
-            color={props.active === 'communities' ? '#fff' : '#979797'}
+            color={props.active === 'community' ? '#fff' : '#979797'}
             size="lg"
             cursor="pointer"
             icon={faGlobeAmericas}
             style={
-              props.active === 'communities'
+              props.active === 'community'
                 ? { filter: 'drop-shadow(0px 0px 10px #4F80E2)' }
                 : {}
             }

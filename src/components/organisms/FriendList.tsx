@@ -11,7 +11,7 @@ const FriendList = () => {
   return (
     <ThemeX>
       <FriendSearchBar />
-      <Flex w="100%" bg="#242529" justifyContent="center" direction="column">
+      <Flex w="100%" justifyContent="center" direction="column">
         <Flex w="100%" justifyContent="center">
           <Flex w="92%" direction="column">
             <WordWithLine title="Online" color="#979797" />

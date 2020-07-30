@@ -1,4 +1,4 @@
-import { Stack } from '@chakra-ui/core'
+import { Box, Flex } from '@chakra-ui/core'
 import React from 'react'
 
 import DisplayNavAndPage from '../components/organisms/DisplayNavAndPage'
@@ -9,14 +9,16 @@ import TrendingCommunities from '../components/organisms/TrendingCommunities'
 
 export default function ExplorePage() {
   return (
-    <DisplayNavAndPage>
+    <DisplayNavAndPage active="explore">
       <FindInterface />
       <PopularDrops />
       {/* TODO why this spacing not working? @eankeen / Nicholas /  Edwin if you know why / fix this */}
-      <Stack spacing={4} marginTop="15px" direction="row">
-        <TrendingCommunities />
+      <Flex>
+        <Box marginRight="20px">
+          <TrendingCommunities />
+        </Box>
         <RecommendedCommunities />
-      </Stack>
+      </Flex>
     </DisplayNavAndPage>
   )
 }

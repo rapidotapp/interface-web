@@ -6,7 +6,7 @@ import SearchBar from '../atoms/SearchBar'
 
 const FriendSearchBar = () => {
   return (
-    <Flex w="100%" justifyContent="center" alignItems="center" bg="#242529">
+    <Flex w="100%" justifyContent="center" alignItems="center">
       <Flex
         direction="row"
         justifyContent="space-between"
@@ -15,7 +15,6 @@ const FriendSearchBar = () => {
         marginY="20px"
         h="70px"
         borderRadius="35px"
-        bg="#242529"
         boxShadow="0px 0px 25px #151618"
         paddingX="30px"
       >
