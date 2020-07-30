@@ -1,6 +1,8 @@
 import { Button } from '@chakra-ui/core'
 import React from 'react'
 
+import { stdLightGrey } from '../common'
+
 interface friendSearchBarButtonProps {
   name: string
   isActive: boolean
@@ -11,7 +13,7 @@ const FriendSearchBarButton = (props: friendSearchBarButtonProps) => {
     <Button
       variantColor="black"
       bg={props.isActive ? '#42434A' : 'transparent'}
-      color="#979797"
+      color={stdLightGrey}
       size="md"
       borderRadius="20px"
       paddingX="35px"

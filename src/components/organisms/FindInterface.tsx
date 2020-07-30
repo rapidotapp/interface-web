@@ -11,7 +11,7 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 
-import { commonShadow } from '../common'
+import { commonShadow, stdLightGrey } from '../common'
 
 const bigBorder = '35px'
 const maxBorder = '50px'
@@ -34,78 +34,78 @@ export default function FindInterface() {
       >
         <Stack direction="row" alignItems="center" margin="5px">
           <FontAwesomeIcon
-            color="#979797"
+            color={stdLightGrey}
             size="lg"
             cursor="pointer"
             icon={faGraduationCap}
           />
-          <Text color="#979797" marginLeft="15px">
+          <Text color={stdLightGrey} marginLeft="15px">
             Education
           </Text>
         </Stack>
         <Stack direction="row" alignItems="center" margin="5px">
           <FontAwesomeIcon
-            color="#979797"
+            color={stdLightGrey}
             size="lg"
             cursor="pointer"
             icon={faHeadphones}
           />
-          <Text color="#979797" marginLeft="15px">
+          <Text color={stdLightGrey} marginLeft="15px">
             Gaming
           </Text>
         </Stack>
         <Stack direction="row" alignItems="center" margin="5px">
           <FontAwesomeIcon
-            color="#979797"
+            color={stdLightGrey}
             size="lg"
             cursor="pointer"
             icon={faCamera}
           />
-          <Text color="#979797" marginLeft="15px">
+          <Text color={stdLightGrey} marginLeft="15px">
             Movies & TV
           </Text>
         </Stack>
         <Stack direction="row" alignItems="center" margin="5px">
           <FontAwesomeIcon
-            color="#979797"
+            color={stdLightGrey}
             size="lg"
             cursor="pointer"
             icon={faMusic}
           />
-          <Text color="#979797" marginLeft="15px">
+          <Text color={stdLightGrey} marginLeft="15px">
             Music
           </Text>
         </Stack>
         <Stack direction="row" alignItems="center" margin="5px">
           <FontAwesomeIcon
-            color="#979797"
+            color={stdLightGrey}
             size="lg"
             cursor="pointer"
             icon={faHammer}
           />
-          <Text color="#979797" marginLeft="15px">
+          <Text color={stdLightGrey} marginLeft="15px">
             Politics
           </Text>
         </Stack>
         <Stack direction="row" alignItems="center" margin="5px">
           <FontAwesomeIcon
-            color="#979797"
+            color={stdLightGrey}
             size="lg"
             cursor="pointer"
             icon={faBasketballBall}
           />
-          <Text color="#979797" marginLeft="15px">
+          <Text color={stdLightGrey} marginLeft="15px">
             Sports
           </Text>
         </Stack>
         <Stack direction="row" alignItems="center" margin="5px">
           <FontAwesomeIcon
-            color="#979797"
+            color={stdLightGrey}
             size="lg"
             cursor="pointer"
             icon={faLaptopCode}
           />
-          <Text color="#979797" marginLeft="15px">
+          <Text color={stdLightGrey} marginLeft="15px">
             Technology
           </Text>
         </Stack>
