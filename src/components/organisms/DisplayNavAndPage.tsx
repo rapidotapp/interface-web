@@ -6,7 +6,7 @@ import NavSidebar from './NavSidebar'
 interface IDisplayNavAndPage {
   children: JSX.Element[] | JSX.Element
 }
-export default function DisplayNavAndPage({
+export default function NavLayout({
   children,
 }: IDisplayNavAndPage): JSX.Element {
   return (
