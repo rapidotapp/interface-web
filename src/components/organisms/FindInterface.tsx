@@ -55,19 +55,34 @@ export default function FindInterface() {
           </Text>
         </Stack>
         <Stack direction="row" alignItems="center" margin="8px">
-          <FontAwesomeIcon color={stdLightGrey} cursor="pointer" icon={faCamera} fixedWidth />
+          <FontAwesomeIcon
+            color={stdLightGrey}
+            cursor="pointer"
+            icon={faCamera}
+            fixedWidth
+          />
           <Text marginLeft="15px" fontSize="13px">
             Movies & TV
           </Text>
         </Stack>
         <Stack direction="row" alignItems="center" margin="8px">
-          <FontAwesomeIcon color={stdLightGrey} cursor="pointer" icon={faMusic} fixedWidth />
+          <FontAwesomeIcon
+            color={stdLightGrey}
+            cursor="pointer"
+            icon={faMusic}
+            fixedWidth
+          />
           <Text marginLeft="15px" fontSize="13px">
             Music
           </Text>
         </Stack>
         <Stack direction="row" alignItems="center" margin="8px">
-          <FontAwesomeIcon color={stdLightGrey} cursor="pointer" icon={faHammer} fixedWidth />
+          <FontAwesomeIcon
+            color={stdLightGrey}
+            cursor="pointer"
+            icon={faHammer}
+            fixedWidth
+          />
           <Text marginLeft="15px" fontSize="13px">
             Politics
           </Text>
