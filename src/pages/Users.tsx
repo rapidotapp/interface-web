@@ -5,7 +5,7 @@ import FriendList from '../components/organisms/FriendList'
 
 export default function UsersPage() {
   return (
-    <DisplayNavAndPage>
+    <DisplayNavAndPage active="friends">
       <FriendList />
     </DisplayNavAndPage>
   )

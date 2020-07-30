@@ -32,87 +32,80 @@ export default function FindInterface() {
         borderRadius={bigBorder}
         minWidth="200px"
       >
-        <Stack direction="row" alignItems="center" margin="5px">
+        <Stack direction="row" alignItems="center" margin="8px">
           <FontAwesomeIcon
             color={stdLightGrey}
-            size="lg"
             cursor="pointer"
             icon={faGraduationCap}
             fixedWidth
           />
-          <Text color={stdLightGrey} marginLeft="15px">
+          <Text color={stdLightGrey} marginLeft="15px" fontSize="13px">
             Education
           </Text>
         </Stack>
-        <Stack direction="row" alignItems="center" margin="5px">
+        <Stack direction="row" alignItems="center" margin="8px">
           <FontAwesomeIcon
             color={stdLightGrey}
-            size="lg"
             cursor="pointer"
             icon={faHeadphones}
             fixedWidth
           />
-          <Text color={stdLightGrey} marginLeft="15px">
+          <Text color={stdLightGrey} marginLeft="15px" fontSize="13px">
             Gaming
           </Text>
         </Stack>
-        <Stack direction="row" alignItems="center" margin="5px">
+        <Stack direction="row" alignItems="center" margin="8px">
           <FontAwesomeIcon
             color={stdLightGrey}
-            size="lg"
             cursor="pointer"
             icon={faCamera}
             fixedWidth
           />
-          <Text color={stdLightGrey} marginLeft="15px">
+          <Text marginLeft="15px" fontSize="13px">
             Movies & TV
           </Text>
         </Stack>
-        <Stack direction="row" alignItems="center" margin="5px">
+        <Stack direction="row" alignItems="center" margin="8px">
           <FontAwesomeIcon
             color={stdLightGrey}
-            size="lg"
             cursor="pointer"
             icon={faMusic}
             fixedWidth
           />
-          <Text color={stdLightGrey} marginLeft="15px">
+          <Text marginLeft="15px" fontSize="13px">
             Music
           </Text>
         </Stack>
-        <Stack direction="row" alignItems="center" margin="5px">
+        <Stack direction="row" alignItems="center" margin="8px">
           <FontAwesomeIcon
             color={stdLightGrey}
-            size="lg"
             cursor="pointer"
             icon={faHammer}
             fixedWidth
           />
-          <Text color={stdLightGrey} marginLeft="15px">
+          <Text marginLeft="15px" fontSize="13px">
             Politics
           </Text>
         </Stack>
-        <Stack direction="row" alignItems="center" margin="5px">
+        <Stack direction="row" alignItems="center" margin="8px">
           <FontAwesomeIcon
             color={stdLightGrey}
-            size="lg"
             cursor="pointer"
             icon={faBasketballBall}
             fixedWidth
           />
-          <Text color={stdLightGrey} marginLeft="15px">
+          <Text color={stdLightGrey} marginLeft="15px" fontSize="13px">
             Sports
           </Text>
         </Stack>
-        <Stack direction="row" alignItems="center" margin="5px">
+        <Stack direction="row" alignItems="center" margin="8px">
           <FontAwesomeIcon
             color={stdLightGrey}
-            size="lg"
             cursor="pointer"
             icon={faLaptopCode}
             fixedWidth
           />
-          <Text color={stdLightGrey} marginLeft="15px">
+          <Text color={stdLightGrey} marginLeft="15px" fontSize="13px">
             Technology
           </Text>
         </Stack>
