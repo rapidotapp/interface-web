@@ -11,6 +11,7 @@ import ThemeX from './components/theme'
 import Chat from './pages/Chat'
 import Community from './pages/Community'
 import Explore from './pages/Explore'
+import Login from './pages/Login'
 import Users from './pages/Users'
 
 const App: FunctionComponent = () => {
@@ -32,6 +33,9 @@ const App: FunctionComponent = () => {
                 </Route>
                 <Route path="/chat">
                   <Chat />
+                </Route>
+                <Route path="/login">
+                  <Login />
                 </Route>
                 <Route path="/">
                   <Redirect to="/explore" />

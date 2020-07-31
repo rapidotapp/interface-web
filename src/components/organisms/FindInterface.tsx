@@ -61,7 +61,7 @@ export default function FindInterface() {
             icon={faCamera}
             fixedWidth
           />
-          <Text marginLeft="15px" fontSize="13px">
+          <Text marginLeft="15px" fontSize="13px" color={stdLightGrey}>
             Movies & TV
           </Text>
         </Stack>
@@ -72,7 +72,7 @@ export default function FindInterface() {
             icon={faMusic}
             fixedWidth
           />
-          <Text marginLeft="15px" fontSize="13px">
+          <Text marginLeft="15px" fontSize="13px" color={stdLightGrey}>
             Music
           </Text>
         </Stack>
@@ -83,7 +83,7 @@ export default function FindInterface() {
             icon={faHammer}
             fixedWidth
           />
-          <Text marginLeft="15px" fontSize="13px">
+          <Text marginLeft="15px" fontSize="13px" color={stdLightGrey}>
             Politics
           </Text>
         </Stack>
