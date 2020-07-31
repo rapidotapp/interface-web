@@ -14,6 +14,7 @@ module.exports = {
   },
   plugins: ['simple-import-sort'],
   extends: [
+    'react-app',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     'prettier/@typescript-eslint',
