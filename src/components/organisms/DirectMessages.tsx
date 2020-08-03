@@ -10,7 +10,7 @@ import UserDmCard from '~molecules/UserDmCard'
 const DirectMessages = () => {
   return (
     <Flex
-      w="500px"
+      w="450px"
       bg="#292A2F"
       borderTopRightRadius="45px"
       borderBottomRightRadius="45px"
@@ -22,7 +22,7 @@ const DirectMessages = () => {
             Direct Messages
           </Text>
           <Box paddingY="10px">
-            <SearchBar />
+            <SearchBar width="400px" />
           </Box>
           <WordWithLine color="#707070" title="Pinned conversations" />
           {dms

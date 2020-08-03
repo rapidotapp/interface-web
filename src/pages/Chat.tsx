@@ -1,11 +1,22 @@
 import React from 'react'
 
-import DisplayNavAndPage from '../components/organisms/DisplayNavAndPage'
+import NavSidebar from '../components/organisms/NavSidebar'
+import DirectMessages from '../components/organisms/DirectMessages'
+import MessageBox from '../components/organisms/MessageBox'
+import { Flex } from '@chakra-ui/core'
 
 export default function ChatPage() {
   return (
-    <DisplayNavAndPage active="chat">
-      <h1>Messages</h1>
-    </DisplayNavAndPage>
+    <Flex direction="row" width="100%" margin="0">
+      <Flex
+        bg="#292A2F"
+        borderTopRightRadius="45px"
+        borderBottomRightRadius="45px"
+      >
+        <NavSidebar active="chat" />
+        <DirectMessages />
+      </Flex>
+      <MessageBox />
+    </Flex>
   )
 }

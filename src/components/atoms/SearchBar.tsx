@@ -3,7 +3,11 @@ import React from 'react'
 
 import { stdLightGrey } from '../common'
 
-const SearchBar = () => {
+interface searchBarProps {
+  width: string
+}
+
+const SearchBar = (props: searchBarProps) => {
   return (
     <InputGroup>
       <InputLeftElement>
@@ -19,7 +23,7 @@ const SearchBar = () => {
         }}
         color={stdLightGrey}
         fontSize="16px"
-        w="400px"
+        w={props.width}
         h="40px"
         borderRadius="20px"
       />

@@ -36,6 +36,7 @@ export default function NavSidebar(props: navSidebarProps) {
       justify="space-between"
       paddingY="12px"
       boxShadow={commonShadow}
+      zIndex={1}
     >
       <Flex
         w="70px"

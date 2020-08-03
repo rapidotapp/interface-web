@@ -25,7 +25,7 @@ const FriendSearchBar = () => {
         </Flex>
         {/* TODO: dividor component */}
         <Box w="2px" h="60%" bg="#42434A"></Box>
-        <SearchBar />
+        <SearchBar width="400px" />
       </Flex>
     </Flex>
   )
