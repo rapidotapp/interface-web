@@ -1,18 +1,18 @@
 import { Flex, Text } from '@chakra-ui/core'
 import React from 'react'
 
-import LogoBackdrop from '../atoms/LogoBackdrop'
-import MemberCount from '../atoms/MemberCount'
-import { mediumBorderRadius } from '../common'
+import { mediumBorderRadius } from '~/components/common'
+import LogoBackdrop from '~atoms/LogoBackdrop'
+import MemberCount from '~atoms/MemberCount'
 
-interface ICommunityCardSmall {
+interface communityCardSmallProps {
   title: string
   totalMembers: string | number
 }
 export default function CommunityCardSmall({
   title,
   totalMembers,
-}: ICommunityCardSmall): JSX.Element {
+}: communityCardSmallProps): JSX.Element {
   return (
     <Flex
       backgroundColor="#292A2F"
@@ -23,7 +23,9 @@ export default function CommunityCardSmall({
     >
       <LogoBackdrop />
       <Flex flexDirection="column" alignItems="flex-start" marginLeft="20px">
-        <Text fontWeight="semibold">{title}</Text>
+        <Text fontWeight="semibold" color="gray.100">
+          {title}
+        </Text>
         <MemberCount totalMembers={totalMembers} />
       </Flex>
     </Flex>

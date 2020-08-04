@@ -1,7 +1,5 @@
-import { Box, Flex, Image } from '@chakra-ui/core'
+import { Flex } from '@chakra-ui/core'
 import {
-  faAt,
-  faCog,
   faComment,
   faCompass,
   faGlobeAmericas,
@@ -13,13 +11,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import { commonShadow } from '../common'
+import IconMentions from '~atoms/IconMentions'
+import IconSettings from '~atoms/IconSettings'
+import UserAvatar from '~atoms/UserAvatar'
 
-interface navProps {
+import { commonShadow } from '../common'
+import { stdLightGrey } from '../common'
+
+interface navSidebarProps {
   active: string
 }
 
-export default function Sidebar(props: navProps) {
+export default function NavSidebar(props: navSidebarProps) {
   return (
     <Flex
       direction="column"
@@ -45,37 +48,19 @@ export default function Sidebar(props: navProps) {
         paddingTop="13px"
         paddingBottom="30px"
       >
-        <Box height="45px">
-          <Image
-            size="45px"
-            src="https://www.yourdictionary.com/images/definitions/lg/10750.person.jpg"
-            borderRadius="50%"
-            cursor="pointer"
-            objectFit="cover"
-          />
-          <Box
-            bg="#67e5ae"
-            w="16px"
-            h="16px"
-            position="relative"
-            bottom="15px"
-            left="30px"
-            borderRadius="50%"
-            margin="0px"
-            padding="0px"
-            border="1px solid black"
-            cursor="pointer"
-          ></Box>
-        </Box>
+        <UserAvatar
+          avatarURL="https://www.yourdictionary.com/images/definitions/lg/10750.person.jpg"
+          onlineStatus="online"
+        />
         <FontAwesomeIcon
-          color="#979797"
+          color={stdLightGrey}
           size="lg"
           cursor="pointer"
           icon={faMicrophone}
         />
         <FontAwesomeIcon
           cursor="pointer"
-          color="#979797"
+          color={stdLightGrey}
           size="lg"
           icon={faVideoSlash}
         />
@@ -91,12 +76,12 @@ export default function Sidebar(props: navProps) {
       >
         <Link to="/chat">
           <FontAwesomeIcon
-            color={props.active === 'dm' ? '#fff' : '#979797'}
+            color={props.active === 'chat' ? '#fff' : '#979797'}
             size="lg"
             cursor="pointer"
             icon={faComment}
             style={
-              props.active === 'dm'
+              props.active === 'chat'
                 ? { filter: 'drop-shadow(0px 0px 10px #4F80E2)' }
                 : {}
             }
@@ -130,12 +115,12 @@ export default function Sidebar(props: navProps) {
         </Link>
         <Link to="/community">
           <FontAwesomeIcon
-            color={props.active === 'communities' ? '#fff' : '#979797'}
+            color={props.active === 'community' ? '#fff' : '#979797'}
             size="lg"
             cursor="pointer"
             icon={faGlobeAmericas}
             style={
-              props.active === 'communities'
+              props.active === 'community'
                 ? { filter: 'drop-shadow(0px 0px 10px #4F80E2)' }
                 : {}
             }
@@ -154,18 +139,8 @@ export default function Sidebar(props: navProps) {
         paddingTop="110px"
         paddingBottom="13px"
       >
-        <FontAwesomeIcon
-          cursor="pointer"
-          color="#979797"
-          size="lg"
-          icon={faAt}
-        />
-        <FontAwesomeIcon
-          cursor="pointer"
-          color="#979797"
-          size="lg"
-          icon={faCog}
-        />
+        <IconMentions />
+        <IconSettings />
       </Flex>
     </Flex>
   )

@@ -1,12 +1,12 @@
 import { Box, Flex } from '@chakra-ui/core'
 import React from 'react'
 
-import FriendSearchBarButton from '../atoms/FriendSearchBarButton'
-import SearchBar from '../atoms/SearchBar'
+import FriendSearchBarButton from '~atoms/FriendSearchBarButton'
+import SearchBar from '~atoms/SearchBar'
 
 const FriendSearchBar = () => {
   return (
-    <Flex w="100%" justifyContent="center" alignItems="center" bg="#242529">
+    <Flex w="100%" justifyContent="center" alignItems="center">
       <Flex
         direction="row"
         justifyContent="space-between"
@@ -15,7 +15,6 @@ const FriendSearchBar = () => {
         marginY="20px"
         h="70px"
         borderRadius="35px"
-        bg="#242529"
         boxShadow="0px 0px 25px #151618"
         paddingX="30px"
       >
@@ -24,10 +23,9 @@ const FriendSearchBar = () => {
           <FriendSearchBarButton name="Requests" isActive={false} />
           <FriendSearchBarButton name="Blocked" isActive={false} />
         </Flex>
+        {/* TODO: dividor component */}
         <Box w="2px" h="60%" bg="#42434A"></Box>
-        <Flex>
-          <SearchBar />
-        </Flex>
+        <SearchBar />
       </Flex>
     </Flex>
   )
