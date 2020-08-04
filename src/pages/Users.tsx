@@ -1,12 +1,12 @@
 import React from 'react'
 
-import NavLayout from '~organisms/DisplayNavAndPage'
+import LayoutNav from '~/layouts/LayoutNav'
 import FriendList from '~organisms/FriendList'
 
 export default function UsersPage() {
   return (
-    <NavLayout active="friends">
+    <LayoutNav active="friends">
       <FriendList />
-    </NavLayout>
+    </LayoutNav>
   )
 }

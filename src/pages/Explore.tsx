@@ -1,7 +1,7 @@
 import { Box, Flex } from '@chakra-ui/core'
 import React from 'react'
 
-import NavLayout from '~organisms/DisplayNavAndPage'
+import LayoutNav from '~/layouts/LayoutNav'
 import FindInterface from '~organisms/FindInterface'
 import PopularDrops from '~organisms/PopularDrops'
 import RecommendedCommunities from '~organisms/RecommendedCommunities'
@@ -9,7 +9,7 @@ import TrendingCommunities from '~organisms/TrendingCommunities'
 
 export default function ExplorePage() {
   return (
-    <NavLayout active="explore">
+    <LayoutNav active="explore">
       <FindInterface />
       <PopularDrops />
       <Flex>
@@ -18,6 +18,6 @@ export default function ExplorePage() {
         </Box>
         <RecommendedCommunities />
       </Flex>
-    </NavLayout>
+    </LayoutNav>
   )
 }
