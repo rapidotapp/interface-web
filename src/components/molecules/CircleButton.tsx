@@ -1,12 +1,13 @@
 import { Flex } from '@chakra-ui/core'
 import React from 'react'
 
-interface navTabProps {
+interface circleButtonProps {
+  // If you guys could find the exact type for this, please insert it here
   icon: any
   bg: string
 }
 
-const NavTab = (props: navTabProps) => {
+const CircleButton = (props: circleButtonProps) => {
   return (
     <Flex
       h="60px"
@@ -21,4 +22,4 @@ const NavTab = (props: navTabProps) => {
   )
 }
 
-export default NavTab
+export default CircleButton

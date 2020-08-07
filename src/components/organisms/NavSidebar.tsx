@@ -2,7 +2,7 @@ import { Flex, Image } from '@chakra-ui/core'
 import React from 'react'
 import { Bell, FileText, Globe, Inbox, Settings, Users } from 'react-feather'
 
-import NavTab from '../molecules/NavTab'
+import CircleButton from '../molecules/CircleButton'
 
 export default function NavSidebar() {
   const imageURL =
@@ -25,14 +25,20 @@ export default function NavSidebar() {
         justify="space-between"
         align="center"
       >
-        <NavTab icon={<Users color="#FFF5F5" size={24} />} bg="red.300" />
-        <NavTab icon={<Inbox color="#FC8181" size={24} />} bg="red.50" />
-        <NavTab icon={<FileText color="#FC8181" size={24} />} bg="red.50" />
-        <NavTab icon={<Bell color="#FC8181" size={24} />} bg="red.50" />
-        <NavTab icon={<Globe color="#FC8181" size={24} />} bg="red.50" />
+        <CircleButton icon={<Users color="#FFF5F5" size={24} />} bg="red.300" />
+        <CircleButton icon={<Inbox color="#FC8181" size={24} />} bg="red.50" />
+        <CircleButton
+          icon={<FileText color="#FC8181" size={24} />}
+          bg="red.50"
+        />
+        <CircleButton icon={<Bell color="#FC8181" size={24} />} bg="red.50" />
+        <CircleButton icon={<Globe color="#FC8181" size={24} />} bg="red.50" />
       </Flex>
       <Flex w="60px" h="60px" justify="center" align="center" marginTop="auto">
-        <NavTab icon={<Settings color="#FC8181" size={24} />} bg="red.50" />
+        <CircleButton
+          icon={<Settings color="#FC8181" size={24} />}
+          bg="red.50"
+        />
       </Flex>
     </Flex>
   )
