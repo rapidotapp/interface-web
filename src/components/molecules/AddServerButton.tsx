@@ -8,7 +8,7 @@ const AddServerButton = () => {
       w="60px"
       h="60px"
       bg="red.300"
-      marginY="14px"
+      marginBottom="14px"
       borderRadius="30px"
       justify="center"
       align="center"
