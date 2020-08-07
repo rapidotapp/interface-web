@@ -10,7 +10,13 @@ export default function NavSidebar() {
   return (
     <Flex w="118px" h="100vh" direction="column" align="center" padding="29px">
       <Flex w="60px" h="60px" marginBottom="auto">
-        <Image src={imageURL} borderRadius="30px" w="100%" h="100%" />
+        <Image
+          src={imageURL}
+          borderRadius="30px"
+          w="100%"
+          h="100%"
+          boxShadow="0px 0px 20px 5px rgba(252, 129, 129, 0.37);"
+        />
       </Flex>
       <Flex
         w="60px"
@@ -26,7 +32,7 @@ export default function NavSidebar() {
         <NavTab icon={<Globe color="#FC8181" size={24} />} bg="red.50" />
       </Flex>
       <Flex w="60px" h="60px" justify="center" align="center" marginTop="auto">
-        <Settings color="#FC8181" size={24} />
+        <NavTab icon={<Settings color="#FC8181" size={24} />} bg="red.50" />
       </Flex>
     </Flex>
   )
