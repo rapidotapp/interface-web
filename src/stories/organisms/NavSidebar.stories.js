@@ -6,7 +6,7 @@ import ThemeX from '../../components/theme'
 
 export default { title: 'Organisms.NavSidebar' }
 
-export const withText = () => {
+export const navSidebar = () => {
   return (
     <ThemeX>
       <Router>
