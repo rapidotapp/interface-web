@@ -5,6 +5,7 @@ import { ChevronDown } from 'react-feather'
 interface communityBarSectionHeaderProps {
   title: string
   color: string
+  onClick: any
 }
 
 const CommunityBarSectionHeader = (props: communityBarSectionHeaderProps) => {
@@ -14,6 +15,7 @@ const CommunityBarSectionHeader = (props: communityBarSectionHeaderProps) => {
       align="center"
       bg="rgba(255, 255, 255, 0.77)"
       padding="24px 16px"
+      onClick={props.onClick}
     >
       <Text color={props.color} fontSize="lg" marginRight="auto">
         {props.title}
