@@ -1,3 +1,4 @@
+import { CSSReset, ThemeProvider } from '@chakra-ui/core'
 import React from 'react'
 import ReactDOM from 'react-dom'
 
@@ -6,7 +7,10 @@ import * as serviceWorker from './serviceWorker'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider>
+      <CSSReset />
+      <App />
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 )

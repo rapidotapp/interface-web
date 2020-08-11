@@ -18,7 +18,13 @@ const CommunityBar = () => {
   const communityBG =
     'url("https://images.unsplash.com/photo-1596698867859-a27795736d7e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80")'
   return (
-    <Flex w="224px" h="100vh" bgImage={communityBG} direction="column">
+    <Flex
+      w="224px"
+      h="100vh"
+      bgImage={communityBG}
+      direction="column"
+      border="1px solid #B5B5B5"
+    >
       <Flex direction="column" padding="16px" color="white">
         <Text fontSize="4xl">art hangout</Text>
         <Text fontSize="lg">artists, designers, graphics</Text>

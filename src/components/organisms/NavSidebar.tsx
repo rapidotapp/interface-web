@@ -8,7 +8,14 @@ export default function NavSidebar() {
   const imageURL =
     'https://images.unsplash.com/photo-1557672172-298e090bd0f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80'
   return (
-    <Flex w="118px" h="100vh" direction="column" align="center" padding="29px">
+    <Flex
+      w="118px"
+      h="100vh"
+      direction="column"
+      align="center"
+      padding="29px"
+      border="1px solid #B5B5B5"
+    >
       <Flex w="60px" h="60px" marginBottom="auto">
         <Image
           src={imageURL}
