@@ -19,11 +19,17 @@ const CommunityBar = () => {
     'url("https://images.unsplash.com/photo-1596698867859-a27795736d7e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80")'
   return (
     <Flex
-      w="224px"
+      w="30rem"
       h="100vh"
       bgImage={communityBG}
       direction="column"
-      border="1px solid #B5B5B5"
+      height="100vh"
+      style={{
+        overflowX: 'hidden',
+        overflowY: 'scroll',
+      }}
+      className="no-scrollbar"
+      borderRight="1px solid #B5B5B5"
     >
       <Flex direction="column" padding="16px" color="white">
         <Text fontSize="4xl">art hangout</Text>
@@ -71,6 +77,7 @@ const CommunityBar = () => {
             title="Chat Streams"
             color="red.300"
             onClick={handleToggle1}
+            isOpen={show1}
           />
           <Collapse isOpen={show1}>
             <Channel
@@ -105,6 +112,7 @@ const CommunityBar = () => {
             title="Post Streams"
             color="red.300"
             onClick={handleToggle2}
+            isOpen={show2}
           />
           <Collapse isOpen={show2}>
             <Channel
@@ -131,6 +139,7 @@ const CommunityBar = () => {
             title="AV Streams"
             color="red.300"
             onClick={handleToggle3}
+            isOpen={show3}
           />
           <Collapse isOpen={show3}>
             <Channel
@@ -151,6 +160,7 @@ const CommunityBar = () => {
             />
           </Collapse>
         </Box>
+        <CommunityBarDivider />
       </Flex>
     </Flex>
   )

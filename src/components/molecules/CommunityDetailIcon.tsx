@@ -16,6 +16,7 @@ const CommunityDetailIcon = (props: communityDetailIconProps) => {
         justify="center"
         bg="red.300"
         borderRadius="20px"
+        style={{ cursor: 'pointer' }}
       >
         {props.icon}
       </Flex>

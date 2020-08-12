@@ -1,21 +1,21 @@
 import { Flex, Input, InputGroup, InputRightAddon } from '@chakra-ui/core'
-import React from 'react'
+import React, { useState } from 'react'
 import { Smile } from 'react-feather'
 
 const MessageBar = () => {
+  const [message, setMessage] = useState('')
+
   return (
     <Flex
       padding="16px 12px"
       justify="center"
       align="center"
-      bg="white"
+      bg="red.50"
       h="84px"
-      pos="absolute"
-      w="50%"
       bottom={0}
     >
       <InputGroup
-        bg="#FFE9E9"
+        bg="red.100"
         w="100%"
         h="100%"
         borderRadius="5px"
@@ -25,17 +25,17 @@ const MessageBar = () => {
         color="red.300"
       >
         <Input
-          bg="#FFE9E9"
+          bg="red.100"
           w="100%"
           h="100%"
           placeholder="Message #general"
           color="red.300"
+          value={message}
+          onChange={(e: any) => setMessage(e.target.value)}
         ></Input>
-        <InputRightAddon
-          bg="red.300"
-          children={<Smile color="white" />}
-          h="100%"
-        />
+        <InputRightAddon bg="red.300" h="100%">
+          <Smile color="white" />
+        </InputRightAddon>
       </InputGroup>
     </Flex>
   )

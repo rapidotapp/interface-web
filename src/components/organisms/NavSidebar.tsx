@@ -9,14 +9,14 @@ export default function NavSidebar() {
     'https://images.unsplash.com/photo-1557672172-298e090bd0f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80'
   return (
     <Flex
-      w="118px"
+      w="7.375rem"
       h="100vh"
       direction="column"
       align="center"
       padding="29px"
-      border="1px solid #B5B5B5"
+      borderRight="1px solid #B5B5B5"
     >
-      <Flex w="60px" h="60px" marginBottom="auto">
+      <Flex w="60px" h="60px" marginBottom="auto" style={{ cursor: 'pointer' }}>
         <Image
           src={imageURL}
           borderRadius="30px"

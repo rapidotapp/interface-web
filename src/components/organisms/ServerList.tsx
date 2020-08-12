@@ -10,7 +10,14 @@ const ServerList = () => {
     'https://images.unsplash.com/photo-1557672172-298e090bd0f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80'
 
   return (
-    <Flex h="100vh" w="118px" padding="28px" direction="column">
+    <Flex
+      h="100vh"
+      w="7.375rem"
+      padding="28px"
+      direction="column"
+      borderRight="1px solid #B5B5B5"
+      align="center"
+    >
       <AddServerButton />
       <NavDivider />
       <ServerIcon active={false} iconURL={iconURL} />

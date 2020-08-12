@@ -11,7 +11,7 @@ const CommunityInfo = (props: communityInfoProps) => {
     <Flex
       h="90px"
       w="100%"
-      border="1px solid #B5B5B5"
+      borderBottom="1px solid #B5B5B5"
       align="center"
       direction="row"
       padding="25px"

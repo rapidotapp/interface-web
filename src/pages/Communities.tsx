@@ -1,5 +1,5 @@
-import { Box, Flex } from '@chakra-ui/core'
-import React from 'react'
+import { Flex } from '@chakra-ui/core'
+import React, { useState } from 'react'
 
 import CommunityBar from '~/components/organisms/CommunityBar'
 import CommunityDetails from '~/components/organisms/CommunityDetails'
@@ -8,15 +8,16 @@ import NavSidebar from '~/components/organisms/NavSidebar'
 import ServerList from '~/components/organisms/ServerList'
 
 const Communities = () => {
+  const [isDetailOpen, setDetailOpen] = useState(true) // TODO: extract all states like this into a context
+  const handleDetail = () => setDetailOpen(!isDetailOpen) //just type here much easier
+
   return (
-    <Flex w="100vw">
+    <Flex>
       <NavSidebar />
       <ServerList />
       <CommunityBar />
-      <Box w="55%">
-        <CommunityMessages />
-      </Box>
-      <CommunityDetails />
+      <CommunityMessages handleDetail={handleDetail} />
+      <CommunityDetails isOpen={isDetailOpen} handleDetail={handleDetail} />
     </Flex>
   )
 }

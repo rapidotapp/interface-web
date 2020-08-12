@@ -1,4 +1,4 @@
-import { Flex } from '@chakra-ui/core'
+import { Flex, PseudoBox } from '@chakra-ui/core'
 import React from 'react'
 
 interface circleButtonProps {
@@ -9,16 +9,25 @@ interface circleButtonProps {
 
 const CircleButton = (props: circleButtonProps) => {
   return (
-    <Flex
-      h="60px"
-      w="60px"
+    <PseudoBox
       bg={props.bg}
       borderRadius="30px"
-      justify="center"
-      align="center"
+      style={{
+        transition: 'all 0.3s',
+        cursor: 'pointer',
+      }}
+      _hover={props.bg !== 'red.300' ? { backgroundColor: '#FED7D7' } : {}}
     >
-      {props.icon}
-    </Flex>
+      <Flex
+        h="3.75rem"
+        w="3.75rem"
+        bg="transparent"
+        justify="center"
+        align="center"
+      >
+        {props.icon}
+      </Flex>
+    </PseudoBox>
   )
 }
 

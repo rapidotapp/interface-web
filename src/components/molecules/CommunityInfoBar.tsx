@@ -1,16 +1,14 @@
-import { Flex, Text } from '@chakra-ui/core'
+import { Flex, PseudoBox, Text } from '@chakra-ui/core'
 import React from 'react'
 import { Flag, Info, Users } from 'react-feather'
 
-const CommunityInfoBar = () => {
+const CommunityInfoBar = (props: any) => {
   return (
     <Flex
-      pos="absolute"
       top={0}
       h="90px"
-      border="1px solid #B5B5B5"
-      w="54.5%"
-      bg="white"
+      borderBottom="1px solid #B5B5B5"
+      bg="red.50"
       justify="space-between"
       align="center"
       padding="0px 40px"
@@ -39,7 +37,9 @@ const CommunityInfoBar = () => {
           </Flex>
         </Flex>
       </Flex>
-      <Info size="20px" color="#FC8181" />
+      <PseudoBox _hover={{ cursor: 'pointer' }}>
+        <Info size="20px" color="#FC8181" onClick={props.handleDetail} />
+      </PseudoBox>
     </Flex>
   )
 }

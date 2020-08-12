@@ -6,12 +6,14 @@ interface messageProps {
   iconURL: string
   time: string
   message: string
+  replies: number
+  replyIcon: string
 }
 
 const Message = (props: messageProps) => {
   return (
-    <Flex w="100%" direction="column" marginY="18px">
-      <Flex align="center">
+    <Flex w="100%" direction="column" marginY="18px" bg="red">
+      <Flex>
         <Image
           src={props.iconURL}
           w="50px"
@@ -29,6 +31,18 @@ const Message = (props: messageProps) => {
             </Text>
           </Flex>
           <Text>{props.message}</Text>
+          <Flex marginTop="10px" align="center">
+            <Image
+              src={props.replyIcon}
+              w="30px"
+              h="30px"
+              borderRadius="5px"
+              marginRight="10px"
+            />
+            <Text fontSize="sm" as="b">
+              {props.replies} {props.replies === 1 ? 'reply' : 'replies'}
+            </Text>
+          </Flex>
         </Box>
       </Flex>
     </Flex>
