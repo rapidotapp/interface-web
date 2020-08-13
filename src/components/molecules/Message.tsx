@@ -11,8 +11,6 @@ interface messageProps {
   replyIcon: string
 }
 
-const CodeBlockRenderer = () => {}
-
 const Message = (props: messageProps) => {
   return (
     <Flex w="100%" direction="column" marginY="18px" bg="red">
@@ -36,18 +34,20 @@ const Message = (props: messageProps) => {
           <Text>
             <ReactMarkdown source={props.message} />
           </Text>
-          <Flex marginTop="10px" align="center">
-            <Image
-              src={props.replyIcon}
-              w="30px"
-              h="30px"
-              borderRadius="5px"
-              marginRight="10px"
-            />
-            <Text fontSize="sm" as="b">
-              {props.replies} {props.replies === 1 ? 'reply' : 'replies'}
-            </Text>
-          </Flex>
+          {props.replies > 0 && (
+            <Flex marginTop="10px" align="center">
+              <Image
+                src={props.replyIcon}
+                w="30px"
+                h="30px"
+                borderRadius="5px"
+                marginRight="10px"
+              />
+              <Text fontSize="sm" as="b">
+                {props.replies} {props.replies === 1 ? 'reply' : 'replies'}
+              </Text>
+            </Flex>
+          )}
         </Box>
       </Flex>
     </Flex>
