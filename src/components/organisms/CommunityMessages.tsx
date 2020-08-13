@@ -1,5 +1,5 @@
 import { Box, Flex } from '@chakra-ui/core'
-import React from 'react'
+import React, { useState } from 'react'
 
 import CommunityInfoBar from '~molecules/CommunityInfoBar'
 import Message from '~molecules/Message'
@@ -8,6 +8,8 @@ import MessageBar from '~molecules/MessageBar'
 const CommunityMessages = (props: any) => {
   const iconURL =
     'https://images.unsplash.com/photo-1557672172-298e090bd0f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80'
+
+  const [messages, setMessages] = useState(['a', 'b'])
 
   return (
     <Box w="100%">
@@ -19,15 +21,16 @@ const CommunityMessages = (props: any) => {
         direction="column-reverse"
         overflow="scroll"
         overflowX="hidden"
-        justify="center"
-        align="center"
       >
-        {[...Array(15)].map((index) => (
+        {messages.map((index) => (
           <Message
             iconURL={iconURL}
             from="safinsingh"
             time="9:10"
-            message="hello world! welcome to rapid!"
+            message={`\`import React from 'react'\` should do the trick.
+\`\`\`js
+console.log('hello from rapid!')
+\`\`\``}
             key={index}
             replies={2}
             replyIcon={iconURL}

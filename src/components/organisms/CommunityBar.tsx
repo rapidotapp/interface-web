@@ -31,7 +31,7 @@ const CommunityBar = () => {
       className="no-scrollbar"
       borderRight="1px solid #B5B5B5"
     >
-      <Flex direction="column" padding="16px" color="white">
+      <Flex direction="column" padding="16px" color="white" paddingY="3rem">
         <Text fontSize="4xl">art hangout</Text>
         <Text fontSize="lg">artists, designers, graphics</Text>
       </Flex>

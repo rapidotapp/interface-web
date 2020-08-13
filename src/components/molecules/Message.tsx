@@ -1,5 +1,6 @@
 import { Box, Flex, Image, Text } from '@chakra-ui/core'
 import React from 'react'
+import ReactMarkdown from 'react-markdown'
 
 interface messageProps {
   from: string
@@ -9,6 +10,8 @@ interface messageProps {
   replies: number
   replyIcon: string
 }
+
+const CodeBlockRenderer = () => {}
 
 const Message = (props: messageProps) => {
   return (
@@ -30,7 +33,9 @@ const Message = (props: messageProps) => {
               {props.time}
             </Text>
           </Flex>
-          <Text>{props.message}</Text>
+          <Text>
+            <ReactMarkdown source={props.message} />
+          </Text>
           <Flex marginTop="10px" align="center">
             <Image
               src={props.replyIcon}
