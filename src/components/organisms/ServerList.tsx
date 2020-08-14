@@ -17,6 +17,7 @@ const ServerList = () => {
       direction="column"
       borderRight="1px solid #B5B5B5"
       align="center"
+      borderLeft="1px solid #B5B5B5"
     >
       <AddServerButton />
       <NavDivider />

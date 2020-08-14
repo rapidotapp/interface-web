@@ -9,7 +9,7 @@ import ServerList from '~/components/organisms/ServerList'
 
 const Communities = () => {
   const [isDetailOpen, setDetailOpen] = useState(true) // TODO: extract all states like this into a context
-  const handleDetail = () => setDetailOpen(!isDetailOpen) //just type here much easier
+  const handleDetail = () => setDetailOpen(!isDetailOpen)
 
   return (
     <Flex>
