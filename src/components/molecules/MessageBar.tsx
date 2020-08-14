@@ -52,6 +52,7 @@ const MessageBar = (props: any) => {
                     color="red.300"
                     id="message"
                     name="message"
+                    value={props.values.message || ''}
                   ></Input>
                 )}
               </Field>
