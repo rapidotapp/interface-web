@@ -8,6 +8,7 @@ import {
 } from '@chakra-ui/core'
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
 
 import App from './App'
 import * as serviceWorker from './serviceWorker'
@@ -24,12 +25,14 @@ const customTheme = {
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider theme={customTheme}>
-      <ColorModeProvider value="light">
-        <CSSReset />
-        <App />
-      </ColorModeProvider>
-    </ThemeProvider>
+    <Router>
+      <ThemeProvider theme={customTheme}>
+        <ColorModeProvider value="light">
+          <CSSReset />
+          <App />
+        </ColorModeProvider>
+      </ThemeProvider>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 )

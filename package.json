@@ -6,6 +6,7 @@
     "@chakra-ui/core": "^0.8.0",
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
+    "@opuscapita/react-markdown": "^2.3.12",
     "@types/react-router-dom": "^5.1.5",
     "emotion-theming": "^10.0.27",
     "formik": "^2.1.5",

@@ -1,13 +1,20 @@
-import { Badge, Box, Flex, Input, Text } from '@chakra-ui/core'
+import { Badge, Box, Flex, Input, Stack, Text } from '@chakra-ui/core'
 import React from 'react'
-import { Zap } from 'react-feather'
+import { Feather, TrendingUp, Zap } from 'react-feather'
+
+import { communityHeader, trending } from '../../util/dummyData'
+import TrendingGrid from './TrendingGrid'
 
 const ExplorePage = () => {
-  const communityHeader =
-    'https://images.unsplash.com/photo-1559291001-693fb9166cba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjExNjMwfQ'
-
   return (
-    <Flex w="100%" h="100vh" direction="column">
+    <Flex
+      w="100%"
+      h="100vh"
+      direction="column"
+      bg="red.50"
+      overflowX="hidden"
+      overflowY="scroll"
+    >
       <Flex direction="column" padding="2rem 4rem">
         <Flex align="center">
           <Text fontSize="2.25rem" color="red.300" as="b" marginRight="10px">
@@ -66,20 +73,19 @@ const ExplorePage = () => {
       </Flex>
       <Flex
         backgroundImage={'url(' + communityHeader + ')'}
-        w="90%"
         h="25rem"
         style={{
           backgroundSize: 'cover',
           backgroundPosition: 'center center',
         }}
-        boxShadow="0px 0px 30px rgba(204, 148, 147, 0.54)"
+        boxShadow="0px 0px 20px 5px rgba(204, 148, 147, 0.9)"
         padding="3rem"
         direction="column"
         borderRadius="1.5rem"
         marginX="4rem"
       >
         <Text color="rgba(255, 255, 255, 0.61);" fontSize="0.75rem">
-          rapid staff favorite
+          rapid staff favourite
         </Text>
         <Text fontSize="3rem" as="b" color="red.50">
           Jellyfishes
@@ -168,6 +174,42 @@ const ExplorePage = () => {
           </Flex>
         </Flex>
       </Flex>
+      <Stack w="100%" padding="2rem 4rem" direction="row">
+        <Flex direction="column" w="100%" marginRight="47px">
+          <Flex align="center">
+            <Text fontSize="2.25rem" as="b" color="red.300" marginRight="7px">
+              trending
+            </Text>
+            <TrendingUp color="#FC8181" size="2.3rem" />
+          </Flex>
+          <Text
+            fontSize="1.125rem"
+            color="red.300"
+            marginRight="7px"
+            marginBottom="10px"
+          >
+            the best communities, curated for you.
+          </Text>
+          <TrendingGrid trending={trending} />
+        </Flex>
+        <Flex direction="column" w="100%" marginLeft="47px">
+          <Flex align="center">
+            <Text fontSize="2.25rem" as="b" color="red.300" marginRight="7px">
+              recommended
+            </Text>
+            <Feather color="#FC8181" size="2.3rem" />
+          </Flex>
+          <Text
+            fontSize="1.125rem"
+            color="red.300"
+            marginRight="7px"
+            marginBottom="10px"
+          >
+            the best picks by our in-house jellyfish!
+          </Text>
+          <TrendingGrid trending={trending} />
+        </Flex>
+      </Stack>
     </Flex>
   )
 }

@@ -1,6 +1,7 @@
 import { Box, Flex, Image, Text } from '@chakra-ui/core'
 import React from 'react'
 import ReactMarkdown from 'react-markdown'
+import SyntaxHighlighter from 'react-syntax-highlighter'
 
 interface messageProps {
   from: string
@@ -9,6 +10,13 @@ interface messageProps {
   message: string
   replies: number
   replyIcon: string
+}
+
+class CodeBlock extends React.Component<{ language: string; value: string }> {
+  render() {
+    const { language, value } = this.props
+    return <SyntaxHighlighter language={language}>{value}</SyntaxHighlighter>
+  }
 }
 
 const Message = (props: messageProps) => {
@@ -32,7 +40,12 @@ const Message = (props: messageProps) => {
             </Text>
           </Flex>
           <Text>
-            <ReactMarkdown source={props.message} />
+            <ReactMarkdown
+              source={props.message}
+              renderers={{
+                code: CodeBlock,
+              }}
+            />
           </Text>
           {props.replies > 0 && (
             <Flex marginTop="10px" align="center">
