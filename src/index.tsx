@@ -1,12 +1,38 @@
+import './global.css'
+
+import {
+  ColorModeProvider,
+  CSSReset,
+  theme,
+  ThemeProvider,
+} from '@chakra-ui/core'
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
 
 import App from './App'
 import * as serviceWorker from './serviceWorker'
 
+const customTheme = {
+  ...theme,
+  fonts: {
+    ...theme.fonts,
+    body: 'Inter, sans-serif',
+    heading: 'Inter, sans-serif',
+    monospace: 'JetBrains Mono, monospace',
+  },
+}
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <ThemeProvider theme={customTheme}>
+        <ColorModeProvider value="light">
+          <CSSReset />
+          <App />
+        </ColorModeProvider>
+      </ThemeProvider>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 )

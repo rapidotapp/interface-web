@@ -6,6 +6,7 @@ interface communityBarSectionHeaderProps {
   title: string
   color: string
   onClick: any
+  isOpen: boolean
 }
 
 const CommunityBarSectionHeader = (props: communityBarSectionHeaderProps) => {
@@ -16,11 +17,19 @@ const CommunityBarSectionHeader = (props: communityBarSectionHeaderProps) => {
       bg="rgba(255, 255, 255, 0.77)"
       padding="24px 16px"
       onClick={props.onClick}
+      style={{ cursor: 'pointer' }}
     >
       <Text color={props.color} fontSize="lg" marginRight="auto">
         {props.title}
       </Text>
-      <ChevronDown color="#FC8181" />
+      <ChevronDown
+        color="#FC8181"
+        style={
+          props.isOpen
+            ? { transition: 'all 0.2s', transform: 'rotateZ(180deg)' }
+            : { transition: 'all 0.2s' }
+        }
+      />
     </Flex>
   )
 }

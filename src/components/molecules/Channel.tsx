@@ -1,5 +1,6 @@
-import { Flex, Text } from '@chakra-ui/core'
+import { Flex, PseudoBox, Text } from '@chakra-ui/core'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import ActiveIcon from '../atoms/ActiveIcon'
 
@@ -14,39 +15,47 @@ interface channelProps {
 
 const Channel = (props: channelProps) => {
   return (
-    <Flex
-      direction="row"
-      align="center"
-      bg={props.active ? 'red.300' : 'white'}
-      boxShadow={props.active ? '0px 0px 5px #FC8181' : ''}
-      padding={props.padding}
-    >
-      {props.icon}
-      <Text
-        marginLeft="5px"
-        color={!props.active ? 'red.300' : 'white'}
-        marginRight="auto"
+    <Link to={`/app/community/${props.name}`}>
+      <PseudoBox
+        bg={props.active ? 'red.300' : 'white'}
+        _hover={!props.active ? { backgroundColor: '#FFF5F5 !important' } : {}}
+        style={{ cursor: 'pointer' }}
       >
-        {props.name}
-      </Text>
-      {props.mentions !== 0 ? (
         <Flex
-          justify="center"
+          direction="row"
           align="center"
-          bg={props.active ? 'red.50' : 'red.300'}
-          w="19px"
-          h="14px"
-          borderRadius="7px"
-          boxShadow="0px 0px 4px #FC8181"
+          bg="transparent"
+          boxShadow={props.active ? '0px 0px 5px #FC8181' : ''}
+          padding={props.padding}
         >
-          <Text color={props.active ? 'red.300' : 'red.50'} fontSize="10px">
-            {props.mentions}
+          {props.icon}
+          <Text
+            marginLeft="5px"
+            color={!props.active ? 'red.300' : 'white'}
+            marginRight="auto"
+          >
+            {props.name}
           </Text>
+          {props.mentions !== 0 ? (
+            <Flex
+              justify="center"
+              align="center"
+              bg={props.active ? 'red.50' : 'red.300'}
+              w="19px"
+              h="14px"
+              borderRadius="7px"
+              boxShadow="0px 0px 4px #FC8181"
+            >
+              <Text color={props.active ? 'red.300' : 'red.50'} fontSize="10px">
+                {props.mentions}
+              </Text>
+            </Flex>
+          ) : (
+            props.unread && <ActiveIcon />
+          )}
         </Flex>
-      ) : (
-        props.unread && <ActiveIcon />
-      )}
-    </Flex>
+      </PseudoBox>
+    </Link>
   )
 }
 

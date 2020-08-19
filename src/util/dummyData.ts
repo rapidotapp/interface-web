@@ -91,3 +91,35 @@ export const offlineUsers = [
     drops: ['Google Translate'],
   },
 ]
+
+export const communityHeader =
+  'https://images.unsplash.com/photo-1559291001-693fb9166cba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjExNjMwfQ'
+
+export const trending = [
+  {
+    name: 'B1ing',
+    header:
+      'https://images.unsplash.com/photo-1535083252457-6080fe29be45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9',
+    desc: 'Show off that ice.',
+    tags: ['money', 'abstract'],
+  },
+  {
+    name: 'Dark Arts',
+    header:
+      'https://images.unsplash.com/photo-1555448248-2571daf6344b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9',
+    tags: ['art', 'abstract'],
+  },
+  {
+    name: 'Banff',
+    header:
+      'https://images.unsplash.com/photo-1464054573978-f220a48c764c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format',
+    tags: ['landscapes', 'mountains'],
+  },
+  {
+    name: 'BTS',
+    header:
+      'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format',
+    desc: 'Kpop, but better ;D',
+    tags: ['music', 'korea'],
+  },
+]
