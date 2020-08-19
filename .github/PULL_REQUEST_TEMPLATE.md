@@ -23,3 +23,11 @@ This PR resolves #22
 <!--
 Thank you for your contribution to rapid!
 -->
+
+## Original Design Screenshot
+
+![]()
+
+## Coded Component
+
+![]()
