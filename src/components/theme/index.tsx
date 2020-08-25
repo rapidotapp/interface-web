@@ -6,7 +6,7 @@ import {
 } from '@chakra-ui/core'
 import React from 'react'
 
-const ThemedComponent: React.FunctionComponent = ({ children }) => (
+const ThemeX: React.FunctionComponent = ({ children }) => (
   <ThemeProvider theme={theme}>
     <ColorModeProvider>
       <CSSReset />
@@ -15,4 +15,4 @@ const ThemedComponent: React.FunctionComponent = ({ children }) => (
   </ThemeProvider>
 )
 
-export default ThemedComponent
+export default ThemeX

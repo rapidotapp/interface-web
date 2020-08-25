@@ -1,0 +1,7 @@
+::-webkit-scrollbar {
+  display: none !important;
+}
+
+::-webkit-scrollbar-track {
+  display: none !important;
+}

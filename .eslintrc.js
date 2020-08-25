@@ -22,7 +22,7 @@ module.exports = {
   ],
   rules: {
     '@typescript-eslint/explicit-module-boundary-types': 'off',
-    'react/prop-types': [2, { ignore: ['children'] }],
+    'react/prop-types': 0,
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-unused-vars': [
       'error',
