@@ -44,6 +44,88 @@ export const emojis = [
       },
     ],
   },
+  {
+    category: 'Owo emojis',
+    icon: 'search',
+    emojis: [
+      {
+        name: 'heart3',
+        img: 'https://twemoji.maxcdn.com/v/latest/72x72/2764.png',
+      },
+      {
+        name: 'heart3',
+        img: 'https://twemoji.maxcdn.com/v/latest/72x72/2764.png',
+      },
+      {
+        name: 'heart3',
+        img: 'https://twemoji.maxcdn.com/v/latest/72x72/2764.png',
+      },
+      {
+        name: 'heart3',
+        img: 'https://twemoji.maxcdn.com/v/latest/72x72/2764.png',
+      },
+      {
+        name: 'heart3',
+        img: 'https://twemoji.maxcdn.com/v/latest/72x72/2764.png',
+      },
+      {
+        name: 'heart3',
+        img: 'https://twemoji.maxcdn.com/v/latest/72x72/2764.png',
+      },
+      {
+        name: 'heart3',
+        img: 'https://twemoji.maxcdn.com/v/latest/72x72/2764.png',
+      },
+      {
+        name: 'heart3',
+        img: 'https://twemoji.maxcdn.com/v/latest/72x72/2764.png',
+      },
+      {
+        name: 'heart3',
+        img: 'https://twemoji.maxcdn.com/v/latest/72x72/2764.png',
+      },
+      {
+        name: 'heart3',
+        img: 'https://twemoji.maxcdn.com/v/latest/72x72/2764.png',
+      },
+      {
+        name: 'heart3',
+        img: 'https://twemoji.maxcdn.com/v/latest/72x72/2764.png',
+      },
+      {
+        name: 'heart3',
+        img: 'https://twemoji.maxcdn.com/v/latest/72x72/2764.png',
+      },
+      {
+        name: 'heart3',
+        img: 'https://twemoji.maxcdn.com/v/latest/72x72/2764.png',
+      },
+      {
+        name: 'heart3',
+        img: 'https://twemoji.maxcdn.com/v/latest/72x72/2764.png',
+      },
+      {
+        name: 'heart3',
+        img: 'https://twemoji.maxcdn.com/v/latest/72x72/2764.png',
+      },
+      {
+        name: 'heart3',
+        img: 'https://twemoji.maxcdn.com/v/latest/72x72/2764.png',
+      },
+      {
+        name: 'heart3',
+        img: 'https://twemoji.maxcdn.com/v/latest/72x72/2764.png',
+      },
+      {
+        name: 'heart3',
+        img: 'https://twemoji.maxcdn.com/v/latest/72x72/2764.png',
+      },
+      {
+        name: 'heart3',
+        img: 'https://twemoji.maxcdn.com/v/latest/72x72/2764.png',
+      },
+    ],
+  },
 ]
 
 export const groupDms = [
