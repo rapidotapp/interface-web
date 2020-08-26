@@ -19,6 +19,33 @@ export const dms = [
   },
 ]
 
+export const emojis = [
+  {
+    category: 'Default',
+    icon: 'copy',
+    emojis: [
+      {
+        name: 'heart',
+        img: 'https://twemoji.maxcdn.com/v/latest/72x72/2764.png',
+      },
+      {
+        name: 'heart2',
+        img: 'https://twemoji.maxcdn.com/v/latest/72x72/2764.png',
+      },
+    ],
+  },
+  {
+    category: 'Otherone',
+    icon: 'search',
+    emojis: [
+      {
+        name: 'heart3',
+        img: 'https://twemoji.maxcdn.com/v/latest/72x72/2764.png',
+      },
+    ],
+  },
+]
+
 export const groupDms = [
   {
     pfps: [
