@@ -1,4 +1,4 @@
-import { Flex, Grid, IconButton, Image, Text } from '@chakra-ui/core'
+import { Divider, Flex, Grid, IconButton, Image, Text } from '@chakra-ui/core'
 import React from 'react'
 
 interface emojis {
@@ -42,6 +42,7 @@ const EmojiSelector = (props: emojiSelectorProps) => (
         )
       })}
     </Flex>
+    <Divider orientation="horizontal" />
 
     {props.categories.map((category: emojiCategory) => {
       return (
