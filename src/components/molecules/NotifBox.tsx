@@ -1,0 +1,40 @@
+import {
+  Alert,
+  AlertDescription,
+  AlertIcon,
+  AlertTitle,
+  Flex,
+  Text,
+} from '@chakra-ui/core'
+import React from 'react'
+
+// status error success warning info, variant subtle solid left-accent top-accent
+
+interface NotifProps {
+  status: any
+  variant: any
+  title: string
+  text: string
+  time: string
+}
+
+const NotifBox = (props: NotifProps) => {
+  return (
+    <Alert
+      status={props.status}
+      variant={props.variant}
+      justifyContent="center"
+      textAlign="center"
+      outline="solid 0.15em white"
+    >
+      <AlertIcon />
+      <Flex flexDirection="column">
+        <AlertTitle>{props.title}</AlertTitle>
+        <AlertDescription>{props.text}</AlertDescription>
+        <Text fontSize="0.7em">{props.time}</Text>
+      </Flex>
+    </Alert>
+  )
+}
+
+export default NotifBox
