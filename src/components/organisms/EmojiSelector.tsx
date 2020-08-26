@@ -21,7 +21,13 @@ function yeet() {
 }
 
 const EmojiSelector = (props: emojiSelectorProps) => (
-  <Flex flexDirection="column" backgroundColor="#ffffff" overflow="scroll">
+  <Flex
+    width={350}
+    height={400}
+    flexDirection="column"
+    backgroundColor="#ffffff"
+    overflow="scroll"
+  >
     <Flex alignItems="center" p={2} justifyContent="space-around">
       {props.categories.map((category: emojiCategory) => {
         return (
@@ -59,10 +65,8 @@ const EmojiCategory = (props: emojiCategory) => (
         return (
           <Image
             key={'emojiPrev_' + emoji.name}
-            height="30px"
-            width="30px"
-            htmlHeight="30px"
-            htmlWidth="30px"
+            htmlHeight="25px"
+            htmlWidth="25px"
             src={emoji.img}
           />
         )
